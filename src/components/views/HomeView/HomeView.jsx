@@ -1,12 +1,13 @@
+import Hero from '../../Hero';
+import OpenRevSect from '../../OpenRevSect';
+
 const HomeView = () => {
-    return (
-        
-        <>
-            <h1>HomeView</h1>
-            <button className="button primery">fdsfsd</button>
-            <button className="button secondary">fdsfsd</button>
-        </>
-    )
-}
- 
+  return (
+    <>
+      <Hero />
+      <OpenRevSect />
+    </>
+  );
+};
+
 export default HomeView;
