@@ -1,0 +1,47 @@
+@mixin social-list {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin social-item {
+  width: 44px;
+  height: 44px;
+  & a svg {
+    display: flex;
+    justify-content: center;
+  }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  & svg {
+    margin-left: auto;
+    margin-right: auto;
+    height: 44px;
+  }
+}
+
+@mixin button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  padding: 8px 18px;
+  letter-spacing: 0.06em;
+  border-radius: 12px;
+  text-align: center;
+}
+
+@mixin logo {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+
+  letter-spacing: 0;
+  color: black;
+}

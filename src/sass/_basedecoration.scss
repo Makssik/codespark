@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+  width: 100%;
+  // @media screen and (max-width: 480px) {
+  //   width: 480px;
+  // }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+main {
+  background-color: $background-color;
+}
+
+body {
+  margin: 0;
+  font-family: Inter;
+  background-color: #fff;
+}
+
+section {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 75px;
+  padding-bottom: 60px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $main-text-color;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  color: $main-text-color;
+}
+
+p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+}
+
+.subtitle{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: block;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1140px) {
+    width: 1140px;
+  }
+}
+
+.logo {
+  @include logo;
+}
+
+.button {
+  &.primery {
+    @include button;
+    background-color: $accent;
+    color: #fff;
+  }
+
+  &.secondary {
+    @include button;
+    background-color: transparent;
+    border: 1px solid #030303;
+    color: #030303;
+  }
+}
+
+#root {
+  background-color: $background-color;
+}
