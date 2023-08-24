@@ -1,0 +1,25 @@
+.qna__item {
+  // outline: 1px solid red;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  max-width: 600px;
+  & h3 {
+    margin-top: 10px;
+  }
+}
+
+.qna__ques-placeholder {
+  cursor: pointer;
+  // margin-bottom: 10px;
+  padding: 3px 10px;
+  border-radius: 30px;
+  border-bottom: 3px solid lightgrey;
+}
+
+.qna__answer-placeholder {
+  padding: 0 20px;
+}
+
+.qna__answer {
+  margin: 0;
+}
