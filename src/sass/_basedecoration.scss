@@ -25,8 +25,7 @@ body {
 section {
   width: 100%;
   margin: 0 auto;
-  padding-top: 75px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 
 ul {
@@ -71,6 +70,13 @@ p {
 .subtitle{
   text-align: center;
   margin-bottom: 30px;
+  &--left{
+    text-align: left;
+  }
+}
+
+.title--left{
+  text-align: left;
 }
 
 .container {

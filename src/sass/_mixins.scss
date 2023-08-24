@@ -45,3 +45,13 @@
   letter-spacing: 0;
   color: black;
 }
+
+@mixin img-wrapper($width){
+   width: $width;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
