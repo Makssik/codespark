@@ -47,7 +47,7 @@
 }
 
 @mixin img-wrapper($width){
-   width: $width;
+  width: $width;
   height: auto;
   display: flex;
   flex-direction: column;
