@@ -25,12 +25,7 @@ h1.hero__title {
 }
 
 .hero__logo-wrapper {
-  width: 600px;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include img-wrapper(600px);
 
   @media screen and (max-width: 768px) {
     display: none;

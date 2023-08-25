@@ -39,8 +39,8 @@ a {
 }
 
 h2 {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   font-family: Inter;
   font-weight: 700;
   font-size: 36px;
@@ -73,10 +73,20 @@ p {
   &--left{
     text-align: left;
   }
+
+  @media screen and (max-width:768px) {
+        text-align: center;
+  }
 }
 
 .title--left{
   text-align: left;
+
+  @media screen and (max-width:768px) {
+    h2, p{ 
+        text-align: center;
+    }
+  }
 }
 
 .container {
@@ -116,3 +126,16 @@ p {
 #root {
   background-color: $background-color;
 }
+
+  .half-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    button {
+      width: 200px;
+    }
+
+    @media screen and (max-width: 768px) {
+        align-items: center;
+    }
+  }
