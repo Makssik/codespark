@@ -25,17 +25,18 @@ const SliderPricesList = () => {
   const settings = {
     className: 'center custom-style-slider',
     centerMode: true,
-    // dots: true,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth: true,
     initialSlide: 1,
+    adaptiveHeight: true,
   };
-    
+
   return (
-    <section>
+    <section className="price">
       <div className="container">
         <h2>Pricing</h2>
         <p className="subtitle">
@@ -44,19 +45,23 @@ const SliderPricesList = () => {
         <Slider {...settings}>
           {curses.map((curse, index) => {
             return (
-              <div className="price__item custom-slide">
-                <h4>{curse.name}</h4>
-                <p>
-                  <span className="price__value">{curse.price}</span>/
-                  {curse.countOfLessons} занять
-                </p>
-                <p>{curse.description}</p>
-                <button
-                  className={`button ${index === 1 ? 'primery' : 'secondary'}`}
-                >
-                  Get Started with {curse.name}
-                </button>
-              </div>
+              // <div className="price__wrapper">
+                <div className="price__item custom-slide">
+                  <h4>{curse.name}</h4>
+                  <p>
+                    <span className="price__value">{curse.price}</span>/
+                    {curse.countOfLessons} занять
+                  </p>
+                  <p>{curse.description}</p>
+                  <button
+                    className={`button ${
+                      index === 1 ? 'primery' : 'secondary'
+                    }`}
+                  >
+                    Get Started with {curse.name}
+                  </button>
+                </div>
+              // </div>
             );
           })}
         </Slider>
