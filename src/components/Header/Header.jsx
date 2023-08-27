@@ -68,34 +68,35 @@ const Header = () => {
   return (
     <header className="header">
       <div className=" container header__container">
-          <div className="logo logo--header">
-            CodeSpark
-          </div>
-          <ul
-            ref={node}
-            className={nav ? 'header__list' : 'header__list active'}
-          >
-            {links.map(({ text, path, id }) => (
-              <li key={id} className="header__item">
-                <NavLink
-                  onClick={() => setNav(true)}
-                  className={({ isActive }) =>
-                    'header__link ' + (isActive ? 'current' : '')
-                  }
-                  to={path}
-                >
-                  {text}
-                </NavLink>
+        <div className="logo logo--header">CodeSpark</div>
+        <ul ref={node} className={nav ? 'header__list' : 'header__list active'}>
+          {links.map(({ text, path, id }) => (
+            <li key={id} className="header__item">
+              <NavLink
+                onClick={() => setNav(true)}
+                className={({ isActive }) =>
+                  'header__link ' + (isActive ? 'current' : '')
+                }
+                to={path}
+              >
+                {text}
+              </NavLink>
+            </li>
+          ))}
+          <li className="header__item">
+            <ul className="header__sign-up">
+              <li>
+                <button className="button secondary">Log in</button>
               </li>
-            ))}
+              <li>
+                <button className="button primery">Sign Up</button>
+              </li>
+            </ul>
+          </li>
         </ul>
-        <div className="header__sign-up">
-          <button className='button secondary'>Log in</button>
-          <button className='button primery'>Sign Up</button>
+        <div onClick={() => setNav(!nav)} className="header__menu-button-icon">
+          {nav ? <AiOutlineMenu size={35} /> : <AiOutlineClose size={35} />}
         </div>
-          <div onClick={() => setNav(!nav)} className="header__menu-button-icon">
-            {nav ? <AiOutlineMenu size={35} /> : <AiOutlineClose size={35} />}
-          </div>
       </div>
     </header>
   );
