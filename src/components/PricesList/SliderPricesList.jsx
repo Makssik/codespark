@@ -23,20 +23,21 @@ const curses = [
   },
 ];
 const SliderPricesList = () => {
-  const [activeSlide, setActiveSlide] = useState(0);
+  const initialSlide = 1;
+  const [activeSlide, setActiveSlide] = useState(initialSlide);
   
   const settings = {
     className: 'center custom-style-slider',
-    // centerMode: true,
+    centerMode: true,
     arrows: false,
     infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth: true,
-    // initialSlide: 1,
+    initialSlide,
     adaptiveHeight: true,
-    centerPadding: '30px',
+    centerPadding: '0px',
     // vertical: false,
 
     beforeChange: (current, next) => setActiveSlide(next),
@@ -49,7 +50,8 @@ const SliderPricesList = () => {
         <p className="subtitle">
           Ціна у нас не дорога, але й не дешева, саме така має бути
         </p>
-        <Slider {...settings}>
+        <div className="slider-wrapper">
+          <Slider {...settings}>
           {curses.map(({price, name, countOfLessons, description}, index) => {
             return (
               <div
@@ -70,7 +72,7 @@ const SliderPricesList = () => {
                   <p>{description}</p>
                   <button
                     className={`button ${
-                      index === 1 ? 'primery' : 'secondary'
+                      index === activeSlide ? 'primery' : 'secondary'
                     }`}
                   >
                     Get Started with {name}
@@ -80,6 +82,7 @@ const SliderPricesList = () => {
             );
           })}
         </Slider>
+        </div>
       </div>
     </section>
   );
