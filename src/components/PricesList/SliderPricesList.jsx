@@ -23,38 +23,45 @@ const curses = [
   },
 ];
 const SliderPricesList = () => {
-  const [activeSlide, setActiveSlide] = useState(1);
+  const [activeSlide, setActiveSlide] = useState(0);
   
   const settings = {
-    // className: 'center custom-style-slider',
-    centerMode: true,
+    className: 'center custom-style-slider',
+    // centerMode: true,
     arrows: false,
     infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth: true,
-    initialSlide: 1,
-    // adaptiveHeight: true,
+    // initialSlide: 1,
+    adaptiveHeight: true,
+    centerPadding: '30px',
+    // vertical: false,
+
     beforeChange: (current, next) => setActiveSlide(next),
-    // afterChange: current => {
-    //   setActiveSlide(current);
-    //   console.log(activeSlide);
-    // },
   };
 
   return (
     <section className="price">
       <div className="container">
-        <h2>Pricing{ activeSlide}</h2>
+        <h2>Pricing</h2>
         <p className="subtitle">
           Ціна у нас не дорога, але й не дешева, саме така має бути
         </p>
         <Slider {...settings}>
           {curses.map(({price, name, countOfLessons, description}, index) => {
             return (
-              <div key={price} className="price__wrapper">
-                <div className={`price__item custom-slide ${index===activeSlide? 'active-slide': ''}`}>
+              <div
+                className="price__wrapper"
+                // style={{width: '290px', display: 'block'}}
+              >
+                <div
+                  key={price}
+                  className={`price__item custom-slide ${
+                    index === activeSlide ? 'active-slide' : ''
+                  }`}
+                >
                   <h4>{name}</h4>
                   <p>
                     <span className="price__value">{price}</span>/
