@@ -20,14 +20,14 @@
 .price__wrapper{
   width: 100%;
   height: 100%;
-  margin-bottom: 20px;
+  margin: 20px 10px;
 }
 .price__item {
   padding: 30px 30px;
   width: auto;
   max-width: 260px;
-  margin: 0 5px;
-  margin-bottom: 40px;
+  margin: auto 5px;
+  // margin-bottom: 40px;
   
 
   background-color: #fff;
@@ -78,4 +78,9 @@
 // }
 .custom-style-slider {
   height: 350px;
+}
+
+
+.price__item.active-slide{
+  transform: scale(1.07);
 }
