@@ -1,5 +1,14 @@
+import AboutUsSection from '../../AboutUsSection';
+import OurMission from '../../OurMission';
+import JoinUsSection from '../../JoinUsSection';
 const AboutView = () => {
-  return <h1>AboutView</h1>;
+  return (
+    <>
+      <AboutUsSection />
+      <OurMission />
+      <JoinUsSection />
+    </>
+  );
 };
 
 export default AboutView;
