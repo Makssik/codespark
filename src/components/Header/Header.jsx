@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
-
 import { NavLink } from 'react-router-dom';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import Logo from '../../images/logo.png';
 
 const links = [
   {
@@ -68,7 +68,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className=" container header__container">
-        <div className="logo logo--header">CodeSpark</div>
+        <img src={Logo} width={200} alt="logo" />
         <ul ref={node} className={nav ? 'header__list' : 'header__list active'}>
           {links.map(({ text, path, id }) => (
             <li key={id} className="header__item">
