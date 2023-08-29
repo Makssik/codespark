@@ -1,0 +1,40 @@
+.join-to-us {
+    margin-bottom: 40px;
+  @media screen and (max-width: 768px) {
+    padding: 0 30px;
+  }
+}
+
+.join-to-us .container {
+  display: flex;
+  padding: 50px 60px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: $box-shadow;
+
+  .img-wrapper {
+    width: 700px;
+    height: 350px;
+    object-fit: cover;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  padding: 50px 40px;
+
+    h2{
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: -1px;
+        margin-bottom: 10px;
+    }
+    .img-wrapper {
+      width: auto;
+      height: auto;
+    }
+  }
+}
