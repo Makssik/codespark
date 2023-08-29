@@ -1,5 +1,6 @@
 import React from 'react';
-import Logo from '../../images/logo-transparent.png';
+// import Logo from '../../images/logo-transparent.png';
+import HeroImg from '../../images/hero-img2.png';
 
 function Hero() {
   return (
@@ -24,7 +25,12 @@ function Hero() {
           </div>
         </div>
         <div className="hero__logo-wrapper">
-          <img src={Logo} width={400} alt="logo" className="hero__logo logo" />
+          <img
+            src={HeroImg}
+            width={400}
+            alt="logo"
+            className="hero__logo logo"
+          />
         </div>
       </div>
     </section>
