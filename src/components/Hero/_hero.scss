@@ -1,8 +1,25 @@
+.hero{
+  background: url('../../images/hero-bg.png');
+  background-repeat: no-repeat;
+
+@media screen and (max-width:1140px) {
+    background-position: -100px 0px;
+  }
+
+
+  @media screen and (max-width:768px) {
+    background: none;
+  }
+}
+
 .hero .container {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   @media screen and (max-width: 768px) {
      justify-content: center;   
+     align-items: center;
+  flex-direction: column-reverse;
     }
 }
 
@@ -17,6 +34,7 @@ h1.hero__title {
   margin-bottom: 30px;
 
   @media screen and (max-width: 768px) {
+  font-size: 38px;
   }
 }
 
@@ -28,7 +46,8 @@ h1.hero__title {
   @include img-wrapper(600px);
 
   @media screen and (max-width: 768px) {
-    display: none;
+    @include img-wrapper(300px)
+    // display: none;
   }
 }
 
