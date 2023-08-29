@@ -1,1 +1,1 @@
-export {default} from './JoinUsSection'
+export { default } from './JoinToUsSection';
