@@ -3,9 +3,9 @@
   gap: 50px;
   margin-bottom: 60px;
 
-&:nth-child(2n){
+  &:nth-child(2n) {
     flex-direction: row-reverse;
-}
+  }
 
   img {
     width: 500px;
@@ -22,15 +22,21 @@
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    &:nth-child(2n){
-    flex-direction: column;
-}
+    &:nth-child(2n) {
+      flex-direction: column;
+    }
     h2 {
+      text-align: center;
       font-size: 32px;
       margin-bottom: 20px;
     }
     img {
       width: 85%;
+    }
+    button{
+      display: block;
+      width: 150px;
+      margin: 0 auto;
     }
   }
 }
@@ -39,4 +45,8 @@
   text-transform: uppercase;
   color: #7f7f7f;
   font-size: 12px;
+
+  @media screen and (max-width:768px) {
+    text-align: center;
+  }
 }
