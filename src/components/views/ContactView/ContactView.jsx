@@ -1,5 +1,11 @@
+import ContactForm from '../../ContactForm';
+
 const ContactView = () => {
-  return <h1>ContactView</h1>;
+  return (
+    <>
+      <ContactForm />
+    </>
+  );
 };
 
 export default ContactView;
