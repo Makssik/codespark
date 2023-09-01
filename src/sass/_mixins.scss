@@ -46,12 +46,18 @@
   color: black;
 }
 
-@mixin img-wrapper($width){
+@mixin img-wrapper($width) {
   width: $width;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
 
+@mixin input--text {
+  font-size: 18px;
+  padding: 10px 15px;
+  // border: 1px solid grey;
+  border-radius: 6px;
 }
