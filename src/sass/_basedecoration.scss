@@ -131,15 +131,15 @@ p {
   background-color: $background-color;
 }
 
-// .half-wrapper {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   button {
-//     width: 200px;
-//   }
+.half-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  button {
+    width: 200px;
+  }
 
-//   @media screen and (max-width: 768px) {
-//     align-items: center;
-//   }
-// }
+  @media screen and (max-width: 768px) {
+    align-items: center;
+  }
+}

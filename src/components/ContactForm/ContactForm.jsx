@@ -41,7 +41,7 @@ const ContactForm = () => {
   return (
     <section className="contact">
       <div className="container">
-        <div className="half-wrapper">
+        <div className="contact__half-wrapper">
           <h2 className="title">Зв'яжіться з нами</h2>
           <p className="subtitle">
             Досліджуйте майбутнє разом з нами. Не соромтеся зв'язатися.
