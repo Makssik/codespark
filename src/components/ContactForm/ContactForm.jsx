@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 import ContactUs from '../../images/contact-us.jpg';
-import instance from '../../extencion/axiosConfigure';
+import instance from '../../extension/axiosConfigure';
 
 const MySwal = withReactContent(Swal);
 
@@ -13,6 +13,7 @@ const ContactForm = () => {
     register,
     handleSubmit,
     reset,
+    formState: { errors },
   } = useForm();
 
   const onSubmit = async ({ name, email, message }) => {
@@ -58,11 +59,12 @@ const ContactForm = () => {
                 placeholder=" "
                 className="input--text"
                 type="text"
+                id="name"
                 {...register('name', {
                   required: true,
                 })}
               />
-              <label className="contact__label" htmlFor="">
+              <label className="contact__label" htmlFor="name">
                 Ім'я
               </label>
             </div>
@@ -71,11 +73,12 @@ const ContactForm = () => {
                 placeholder=" "
                 className="input--text"
                 type="email"
+                id="email"
                 {...register('email', {
                   required: true,
                 })}
               />
-              <label className="contact__label" htmlFor="">
+              <label className="contact__label" htmlFor="email">
                 Email
               </label>
             </div>
@@ -84,9 +87,10 @@ const ContactForm = () => {
                 placeholder=" "
                 className="input--text"
                 type="text"
+                id="message"
                 {...register('message')}
               />
-              <label className="contact__label" htmlFor="">
+              <label className="contact__label" htmlFor="message">
                 Ваше повідомлення
               </label>
             </div>

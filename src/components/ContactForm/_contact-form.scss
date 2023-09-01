@@ -37,6 +37,7 @@
     position: absolute;
     top: 50%;
     left: 15px;
+    cursor: text;
     transform: translateY(-50%);
     transition: all 250ms $bezier;
   }
