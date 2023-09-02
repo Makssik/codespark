@@ -1,34 +1,34 @@
-// import { useState } from 'react';
-import { useForm } from 'react-hook-form';
+import { Controller, useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
-import ContactUs from '../../images/contact-us.jpg';
 import instance from '../../extension/axiosConfigure';
+import InputMask from 'react-input-mask';
 
 const MySwal = withReactContent(Swal);
 
 const ContactForm = () => {
-
   const {
     register,
     handleSubmit,
     reset,
+    control,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async ({ name, email, message }) => {
+  const onSubmit = async ({ name, email, message, tel }) => {
+    console.log({ name, email, message, tel });
     try {
-      const response = await instance.post('/messages', {
+      await instance.post('/messages', {
         name,
         email,
         message,
+        tel,
       });
       MySwal.fire({
         title: <p>{`Дякуємо, ${name}, скоро ми зв'яжемось з вами`}</p>,
         icon: 'success',
       });
       reset();
-      console.log(response);
     } catch (err) {
       console.log(err);
       MySwal.fire({
@@ -38,21 +38,10 @@ const ContactForm = () => {
     }
   };
 
-  return (
-    <section className="contact">
-      <div className="container">
-        <div className="contact__half-wrapper">
-          <h2 className="title">Зв'яжіться з нами</h2>
-          <p className="subtitle">
-            Досліджуйте майбутнє разом з нами. Не соромтеся зв'язатися.
-          </p>
-          <div className="img-wrapper">
-            <img src={ContactUs} width={400} alt="" />
-          </div>
+  return (   
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="contact__form"
-            action=""
           >
             <div className="contact__form-field">
               <input
@@ -83,6 +72,25 @@ const ContactForm = () => {
               </label>
             </div>
             <div className="contact__form-field">
+              <Controller
+                name="tel"
+                control={control}
+                rules={{
+                  required: true,
+                }}
+                render={({field}) => (
+                  <InputMask
+                    mask="+389-99-999-99-99"
+                    placeholder="+38_-__-___-__-__"
+                    className="input--text"
+                    {...field}
+                  />
+                )}
+              />
+              {errors.firstName && <p>This is required.</p>}
+              <label className="contact__label" htmlFor="tel"></label>
+            </div>
+            <div className="contact__form-field">
               <input
                 placeholder=" "
                 className="input--text"
@@ -100,9 +108,6 @@ const ContactForm = () => {
               value="Залишити заявку"
             />
           </form>
-        </div>
-      </div>
-    </section>
   );
 };
 
