@@ -38,21 +38,7 @@ const ContactForm = () => {
     }
   };
 
-<<<<<<< Updated upstream
-  return (
-    <section className="contact">
-      <div className="container">
-        <div className="half-wrapper">
-          <h2 className="title">Зв'яжіться з нами</h2>
-          <p className="subtitle">
-            Досліджуйте майбутнє разом з нами. Не соромтеся зв'язатися.
-          </p>
-          <div className="img-wrapper">
-            <img src={ContactUs} width={400} alt="" />
-          </div>
-=======
   return (   
->>>>>>> Stashed changes
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="contact__form"
