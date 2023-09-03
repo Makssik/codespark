@@ -4,16 +4,35 @@ import PrivilegesForChild from '../../PrivilegesForChild';
 import EnterToIT from '../../EnterToIT';
 import JoinToUsSection from '../../JoinUsSection';
 import Reviews from '../../Reviews';
+import { motion } from 'framer-motion';
+import setings from '../../../extension/settingsForInitialTransition';
 
 const HomeView = () => {
   return (
     <>
-      <Hero />
-      <OpenRevSect />
-      <PrivilegesForChild />
-      <EnterToIT />
-      <Reviews />
-      <JoinToUsSection />
+      <motion.section {...setings}>
+        <Hero />
+      </motion.section>
+      
+      <motion.section {...setings}>
+        <OpenRevSect />
+      </motion.section>
+
+      <motion.section {...setings}>
+        <PrivilegesForChild />
+      </motion.section>
+
+      <motion.section {...setings}>
+        <EnterToIT />
+      </motion.section>
+
+      <motion.section {...setings}>
+        <Reviews />
+      </motion.section>
+
+      <motion.section {...setings}>
+        <JoinToUsSection />
+      </motion.section>
     </>
   );
 };
