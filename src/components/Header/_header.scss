@@ -22,6 +22,7 @@
 .header__list {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   width: calc(100% - 150px);
   height: 100%;
   transition: right 550ms $bezier;
@@ -50,33 +51,12 @@
 .header__item {
   margin-top: auto;
   margin-right: 25px;
-  &:last-child {
-    justify-self: flex-end;
-    margin-left: auto;
-    margin-right: 0;
-  }
 
   @media screen and (max-width: 768px) {
     height: 35px;
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 15px;
-
-    &:last-child {
-      justify-self: center;
-      margin: 0;
-      margin-top: auto;
-      margin-bottom: 150px;
-    }
-  }
-}
-
-.header__sign-up {
-  & .button.secondary {
-    border: none;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
   }
 }
 
@@ -85,7 +65,7 @@
   transition: color 250ms $bezier;
   font-family: Inter;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 60px;
   letter-spacing: 0.02em;
 
