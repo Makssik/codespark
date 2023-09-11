@@ -83,16 +83,6 @@ const Header = () => {
               </NavLink>
             </li>
           ))}
-          <li className="header__item">
-            <ul className="header__sign-up">
-              <li>
-                <button className="button secondary">Log in</button>
-              </li>
-              <li>
-                <button className="button primery">Sign Up</button>
-              </li>
-            </ul>
-          </li>
         </ul>
         <div onClick={() => setNav(!nav)} className="header__menu-button-icon">
           {nav ? <AiOutlineMenu size={35} /> : <AiOutlineClose size={35} />}
