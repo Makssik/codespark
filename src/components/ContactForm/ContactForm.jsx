@@ -1,33 +1,24 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
-import instance from '../../extension/axiosConfigure';
+import axiosInstance from '../../extension/axiosConfigure';
 import Loader from '../Loader';
 import { InputMask } from 'primereact/inputmask';
 import { Toast } from 'primereact/toast';
-
 
 const MySwal = withReactContent(Swal);
 
 const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false);
-  const [inputValue, setInputValue] = useState('+380');
-  const [isInputActive, setIsInputActive] = useState(false);
 
   const toast = useRef(null);
-  const {
-    register,
-    handleSubmit,
-    reset,
-    control,
-    formState: { errors },
-  } = useForm();
+  const { register, handleSubmit, reset, control } = useForm();
 
   const onSubmit = async ({ name, email, message, tel }) => {
     setIsLoading(true);
     try {
-      await instance.post('/messages', {
+      await axiosInstance.post('/messages', {
         name,
         email,
         message,
@@ -46,19 +37,6 @@ const ContactForm = () => {
       });
     }
     setIsLoading(false);
-  };
-
-
-  useEffect(() => {
-    if (isInputActive) {
-      setInputValue('+380'); // Устанавливаем значение при активации
-    } else {
-      setInputValue(''); // Устанавливаем пустое значение при деактивации
-    }
-  }, [isInputActive]); 
-  const handleInputChange = event => {
-    console.log(1111111111);
-    setInputValue(event.target.value);
   };
 
   return (
@@ -91,30 +69,13 @@ const ContactForm = () => {
           Email
         </label>
       </div>
-      {/* <div className="contact__form-field">
-        <input
-          onClick={() => setIsInputActive(true)}
-          onFocus={() => setIsInputActive(true)}
-          onChange={e => setInputValue(e.target.value)}
-          placeholder=" "
-          className="input--text"
-          // type="tel"
-          id="tel"
-          value={isInputActive ? inputValue : ''}
-          {...register('tel', {
-            required: true,
-          })}
-        />
-        <label className="contact__label" htmlFor="email">
-          Номер телефону
-        </label>
-      </div> */}
       <div className="contact__form-field">
         <Toast ref={toast} />
         <Controller
           control={control}
-          name='tel'
-          render={({ field, fieldState }) => (
+          name="tel"
+          rules={{ required: 'Поле обязательно для заполнения' }}
+          render={({ field }) => (
             <InputMask
               {...field}
               className="input--text"
@@ -145,12 +106,10 @@ const ContactForm = () => {
       <button
         className="button primery contact__submit-btn"
         type="submit"
-        // value={'Залишити заявку'}
         disabled={isLoading}
       >
         {isLoading ? <Loader /> : 'Залишити заявку'}
       </button>
-      {/* <Loader /> */}
     </form>
   );
 };
