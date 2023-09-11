@@ -32,14 +32,21 @@
   }
 
   .contact__submit-btn {
+    position: relative;
     cursor: pointer;
     display: block;
+    width: 300px;
+    height: 50px;
     margin: 0 auto;
     transition: all 250ms $bezier;
-    &:hover {
+    overflow: hidden;
+    &:disabled{
+      cursor: not-allowed;
+    }
+    &:hover:not(:disabled) {
       transform: scale(1.05);
     }
-    &:active {
+    &:active:not(:disabled) {
       transform: scale(0.85);
     }
   }
