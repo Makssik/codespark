@@ -25,7 +25,7 @@ const curses = [
 const SliderPricesList = () => {
   const initialSlide = 1;
   const [activeSlide, setActiveSlide] = useState(initialSlide);
-  
+
   const settings = {
     className: 'center custom-style-slider',
     centerMode: true,
@@ -52,36 +52,38 @@ const SliderPricesList = () => {
         </p>
         <div className="slider-wrapper">
           <Slider {...settings}>
-          {curses.map(({price, name, countOfLessons, description}, index) => {
-            return (
-              <div
-                className="price__wrapper"
-                // style={{width: '290px', display: 'block'}}
-              >
-                <div
-                  key={price}
-                  className={`price__item custom-slide ${
-                    index === activeSlide ? 'active-slide' : ''
-                  }`}
-                >
-                  <h4>{name}</h4>
-                  <p>
-                    <span className="price__value">{price}</span>/
-                    {countOfLessons} занять
-                  </p>
-                  <p>{description}</p>
-                  <button
-                    className={`button ${
-                      index === activeSlide ? 'primery' : 'secondary'
-                    }`}
+            {curses.map(
+              ({ price, name, countOfLessons, description }, index) => {
+                return (
+                  <div
+                    className="price__wrapper"
+                    // style={{width: '290px', display: 'block'}}
                   >
-                    Get Started with {name}
-                  </button>
-                </div>
-              </div>
-            );
-          })}
-        </Slider>
+                    <div
+                      key={price}
+                      className={`price__item custom-slide ${
+                        index === activeSlide ? 'active-slide' : ''
+                      }`}
+                    >
+                      <h4>{name}</h4>
+                      <p>
+                        <span className="price__value">{price}</span>/
+                        {countOfLessons} занять
+                      </p>
+                      <p>{description}</p>
+                      <button
+                        className={`button ${
+                          index === activeSlide ? 'primery' : 'secondary'
+                        }`}
+                      >
+                        Get Started with {name}
+                      </button>
+                    </div>
+                  </div>
+                );
+              },
+            )}
+          </Slider>
         </div>
       </div>
     </section>
