@@ -1,0 +1,23 @@
+.form-section {
+    margin-bottom: 40px;
+  .container {
+    display: flex;
+    padding: 50px 60px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: $box-shadow;
+
+    justify-content: space-between;
+    .half-wrapper{
+        max-width: 400px;
+
+        margin-right: 100px;
+    }
+    form{
+        margin: 0;
+    }
+    & > * {
+      flex: 0 1 50%;
+    }
+  }
+}

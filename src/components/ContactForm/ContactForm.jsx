@@ -9,7 +9,7 @@ import { Toast } from 'primereact/toast';
 
 const MySwal = withReactContent(Swal);
 
-const ContactForm = () => {
+const ContactForm = ({isMsgFieldVisible}) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const toast = useRef(null);
@@ -91,18 +91,20 @@ const ContactForm = () => {
           Номер телефону
         </label>
       </div>
-      <div className="contact__form-field">
-        <input
-          placeholder=" "
-          className="input--text"
-          type="text"
-          id="message"
-          {...register('message')}
-        />
-        <label className="contact__label" htmlFor="message">
-          Ваше повідомлення
-        </label>
-      </div>
+      {isMsgFieldVisible && (
+        <div className="contact__form-field">
+          <input
+            placeholder=" "
+            className="input--text"
+            type="text"
+            id="message"
+            {...register('message')}
+          />
+          <label className="contact__label" htmlFor="message">
+            Ваше повідомлення
+          </label>
+        </div>
+      )}
       <button
         className="button primery contact__submit-btn"
         type="submit"

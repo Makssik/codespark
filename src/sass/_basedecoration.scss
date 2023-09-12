@@ -28,6 +28,10 @@ section {
   padding: 60px 0;
 }
 
+section.animate-wrapper{
+  padding: 0;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -86,10 +90,7 @@ p {
   text-align: left;
 
   @media screen and (max-width: 768px) {
-    h2,
-    p {
       text-align: center;
-    }
   }
 }
 

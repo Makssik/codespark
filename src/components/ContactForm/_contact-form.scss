@@ -3,7 +3,7 @@
   margin: 0 auto;
   .contact__form-field {
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 22px;
   }
   input.input--text {
     @include input--text;
@@ -27,7 +27,7 @@
     border: 1px solid $accent;
     & + label {
       color: $accent;
-      transform: translateY(-45px);
+      transform: translateY(-43px);
     }
   }
 
@@ -35,7 +35,7 @@
     position: relative;
     cursor: pointer;
     display: block;
-    width: 300px;
+    width: 200px;
     height: 50px;
     margin: 0 auto;
     transition: all 250ms $bezier;
