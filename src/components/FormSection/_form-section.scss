@@ -1,5 +1,5 @@
 .form-section {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
   .container {
     display: flex;
     padding: 50px 60px;
@@ -8,16 +8,29 @@
     box-shadow: $box-shadow;
 
     justify-content: space-between;
-    .half-wrapper{
-        max-width: 400px;
+    .half-wrapper {
+      max-width: 400px;
 
-        margin-right: 100px;
+      // margin-right: 100px;
     }
-    form{
-        margin: 0;
+    form {
+      margin: 0;
     }
     & > * {
       flex: 0 1 50%;
+    }
+  }
+  @media screen and (max-width:768px) {
+    padding: 0 30px;
+    .container{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width:425px) {
+    h2{
+      font-size: 32px;
     }
   }
 }
