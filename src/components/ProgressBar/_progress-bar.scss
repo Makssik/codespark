@@ -1,0 +1,13 @@
+.progress-bar {
+  width: 80%;
+  height: 15px;
+  margin: 0 auto;
+  margin-top: 30px;
+
+  .progress-line {
+    height: 100%;
+  border-radius: 30px;
+    background: linear-gradient(90deg, rgba(161,217,247,1) 0%, rgba(49,100,244,1) 69%, rgba(46,83,189,1) 100%);
+    transition: all 500ms $bezier;
+  }
+}
