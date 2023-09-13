@@ -12,7 +12,7 @@ const ContactView = () => {
         <div className="img-wrapper">
           <img src={ContactUsImg} width={400} alt="" />
         </div>
-        <ContactForm />
+        <ContactForm isMsgFieldVisible={true} />
       </div>
     </section>
   );

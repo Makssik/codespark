@@ -1,6 +1,7 @@
 import QuesAndAns from '../../QuesAndAns';
 import PricesList from '../../PricesList';
 import SliderPricesList from '../../PricesList/SliderPricesList';
+import RoadMap from '../../RoadMap';
 import RoadMapImg from '../../../images/road-map.png';
 
 const PriceView = () => {
@@ -8,7 +9,8 @@ const PriceView = () => {
   return (
     <>
       {isMobile ? <SliderPricesList /> : <PricesList />}
-      <section className='road-map__section'>
+      <RoadMap />
+      <section className="road-map__section--img">
         <div className="container">
           <img width={'100%'} src={RoadMapImg} alt="" />
         </div>

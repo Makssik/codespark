@@ -2,7 +2,6 @@ import Hero from '../../Hero';
 import OpenRevSect from '../../OpenRevSect';
 import PrivilegesForChild from '../../PrivilegesForChild';
 import EnterToIT from '../../EnterToIT';
-import JoinToUsSection from '../../JoinUsSection';
 import Reviews from '../../Reviews';
 import { motion } from 'framer-motion';
 import setings from '../../../extension/settingsForInitialTransition';
@@ -28,10 +27,6 @@ const HomeView = () => {
 
       <motion.section {...setings}>
         <Reviews />
-      </motion.section>
-
-      <motion.section {...setings}>
-        <JoinToUsSection />
       </motion.section>
     </>
   );
