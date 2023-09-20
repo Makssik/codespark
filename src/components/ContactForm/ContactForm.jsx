@@ -9,7 +9,7 @@ import { Toast } from 'primereact/toast';
 
 const MySwal = withReactContent(Swal);
 
-const ContactForm = ({isMsgFieldVisible}) => {
+const ContactForm = ({ isMsgFieldVisible, className }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const toast = useRef(null);
@@ -40,7 +40,10 @@ const ContactForm = ({isMsgFieldVisible}) => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="contact__form">
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className={`contact__form ${className?className: ''}`}
+    >
       <div className="contact__form-field">
         <input
           placeholder=" "
