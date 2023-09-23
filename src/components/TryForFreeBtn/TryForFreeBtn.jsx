@@ -1,11 +1,6 @@
 import * as Scroll from 'react-scroll';
 
 let Link = Scroll.Link;
-let Button = Scroll.Button;
-let Element = Scroll.Element;
-let Events = Scroll.Events;
-let scroll = Scroll.animateScroll;
-let scrollSpy = Scroll.scrollSpy;
 
 const TryForFreeBtn = ({ className }) => {
   return (
