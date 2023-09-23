@@ -2,6 +2,7 @@ import Countdown from 'react-countdown';
 import bgVideoPc from '../../video/bnz-pc.mp4';
 import bgVideo from '../../video/bnz.mp4';
 import { useMediaQuery } from 'react-responsive';
+import TryForFreeBtn from '../TryForFreeBtn';
 
 const renderer = ({ days, hours, minutes, seconds }) => {
   return (
@@ -39,6 +40,7 @@ const WebinarCountdown = () => {
           renderer={renderer}
           date={new Date('2023-09-30T15:00:00').getTime()}
         />
+        <TryForFreeBtn className={'button primery'}/>
       </div>
     </section>
   );

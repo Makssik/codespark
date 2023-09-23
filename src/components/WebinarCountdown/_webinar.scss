@@ -16,6 +16,13 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+
+  a{
+    @include button;
+    color: #fff;
+    padding: 18px 20px;
+  }
 }
 @media screen and (min-width: 869px) {
   .webinar {
