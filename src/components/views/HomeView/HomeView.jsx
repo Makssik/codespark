@@ -11,7 +11,7 @@ const HomeView = () => {
   return (
     <>
       <WebinarCountdown />
-      {/* <motion.section {...setings}>
+      <motion.section {...setings}>
         <Hero />
       </motion.section>
 
@@ -21,7 +21,7 @@ const HomeView = () => {
 
       <motion.section {...setings}>
         <PrivilegesForChild />
-      </motion.section>*/}
+      </motion.section>
 
       <motion.section {...setings}>
         <EnterToIT />
