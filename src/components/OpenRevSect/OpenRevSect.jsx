@@ -1,4 +1,5 @@
 import SoftwareImg from '../../images/software-img.jpg';
+import TryForFreeBtn from '../TryForFreeBtn';
 
 const OpenRevSect = () => {
   return (
@@ -10,7 +11,7 @@ const OpenRevSect = () => {
             Приєднуйтесь до нашої спільноти технологій та розкрийте безмежні
             можливості!
           </p>
-          <button className="button primery">Try for free</button>
+          <TryForFreeBtn className={'button primery'} />
         </div>
         <div className="img-wrapper">
           <img

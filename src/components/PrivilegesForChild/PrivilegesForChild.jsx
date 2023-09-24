@@ -1,5 +1,6 @@
 import ChildImg1 from '../../images/child-1.jpg';
 import ChildImg2 from '../../images/child-2.jpg';
+import TryForFreeBtn from '../TryForFreeBtn';
 
 const PrivilegesForChild = () => {
     return (
@@ -17,7 +18,7 @@ const PrivilegesForChild = () => {
                   вже сьогодні, і разом ми зробимо перший крок у напрямку
                   великих досягнень!
                 </p>
-                <button className="button secondary">Try now</button>
+                <TryForFreeBtn className={'button secondary'} />
               </div>
             </li>
             <li className="previleges-for-child__item">
@@ -30,7 +31,7 @@ const PrivilegesForChild = () => {
                   навчатися. Вкладайте в їх освіту, розкриваючи перед ними
                   безмежні можливості майбутнього.
                 </p>
-                <button className="button secondary">Try now</button>
+                <TryForFreeBtn className={'button secondary'} />
               </div>
             </li>
           </ul>
