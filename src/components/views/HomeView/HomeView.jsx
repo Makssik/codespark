@@ -27,9 +27,9 @@ const HomeView = () => {
         <EnterToIT />
       </motion.section>
 
-      {/*<motion.section {...setings}>
+      <motion.section {...setings}>
         <Reviews />
-      </motion.section> */}
+      </motion.section>
     </>
   );
 };
