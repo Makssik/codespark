@@ -1,4 +1,3 @@
-import Hero from '../../Hero';
 import OpenRevSect from '../../OpenRevSect';
 import PrivilegesForChild from '../../PrivilegesForChild';
 import EnterToIT from '../../EnterToIT';
@@ -11,9 +10,6 @@ const HomeView = () => {
   return (
     <>
       <WebinarCountdown />
-      <motion.section {...setings}>
-        <Hero />
-      </motion.section>
 
       <motion.section {...setings}>
         <OpenRevSect />
