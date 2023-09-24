@@ -73,6 +73,10 @@ const Reviews = () => {
   return (
     <section className="reviews">
       <div className="container">
+        <h2 className="title">Враження від наших молодих талантів</h2>
+        <p className="subtitle">
+          Сповнені ентузіазму відгуки свідчать про наш вплив:
+        </p>
         <div className="review__slider-wrapper">
           <Slider {...settings}>
             {reviews.map(({ text, name, id }) => {

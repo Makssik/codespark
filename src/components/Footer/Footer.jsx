@@ -8,7 +8,7 @@ import {
 } from 'react-icons/bi';
 const Footer = () => {
   return (
-    <footer>
+    <footer id={'footer'}>
       <div className="container">
         <div className="footer__info">
           <h3 className="logo logo--footer">CodeSpark</h3>

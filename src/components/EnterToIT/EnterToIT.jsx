@@ -1,4 +1,5 @@
 import GroupOfPeople from '../../images/group-of-people.jpg';
+import TryForFreeBtn from '../TryForFreeBtn';
 
 const EnterToIT = () => {
     return (
@@ -11,7 +12,7 @@ const EnterToIT = () => {
               Почніть спрощений шлях до підвищення ІТ-компетентності вашої
               дитини
             </p>
-            <button className="button primery">Sign up now</button>
+            <TryForFreeBtn className={'button primery'} />
           </div>
           <ul className="enter-to-it__steps-list">
             <li>
