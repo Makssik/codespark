@@ -38,7 +38,7 @@ const WebinarCountdown = () => {
         <h1>До вебінару залишилось:</h1>
         <Countdown
           renderer={renderer}
-          date={new Date('2023-09-30T15 :00:00').getTime()}
+          date={new Date('2023-09-30T14:00:00').getTime()}
         />
         <TryForFreeBtn className={'button primery'}/>
       </div>
