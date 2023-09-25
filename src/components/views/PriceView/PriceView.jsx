@@ -12,6 +12,8 @@ const PriceView = () => {
       <RoadMap />
       <section className="road-map__section--img">
         <div className="container">
+          <h2 className='title'>Шлях до вивчення програмування
+          <br/>  разом з CodeSpark</h2>
           <img width={'100%'} src={RoadMapImg} alt="" />
         </div>
       </section>
