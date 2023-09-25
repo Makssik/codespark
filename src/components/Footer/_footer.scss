@@ -33,21 +33,6 @@ footer {
   }
 }
 
-.footer__socials {
-  display: flex;
-  justify-content: space-between;
-
-  width: 100%;
-  svg {
-    font-size: 48px;
-    transition: all 250ms $bezier;
-
-    &:hover {
-      color: $accent;
-      transform: scale(1.06);
-    }
-  }
-}
 
 .footer__form-wrapper {
   flex: 0 1 700px;

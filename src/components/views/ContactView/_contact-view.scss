@@ -1,18 +1,84 @@
 .contact {
-  .img-wrapper {
-    display: block;
-    min-width: 100px;
-    max-width: 400px;
-    margin: 0 auto;
-    box-shadow: $box-shadow;
-    border-radius: 30px;
-    margin-bottom: 50px;
-    overflow: hidden;
+}
 
-    img {
-      width: 100%;
-      display: block;
-      object-fit: cover;
-    }
+.contact__heading {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.contact__socials-list {
+  max-width: 350px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+    gap: 10px;
+  }
+}
+
+.contact__variants-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.contact__variants-item {
+  position: relative;
+  max-width: 300px;
+  padding: 20px;
+
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: $box-shadow;
+
+  @media screen and (min-width: 768px) {
+    max-width: 340px;
+  }
+}
+
+.contact__phone {
+  display: flex;
+  gap: 10px;
+  &-number {
+    font-size: 18px;
+  }
+
+  &-icon {
+    font-size: 24px;
+  }
+}
+
+.copied-status {
+  position: absolute;
+  bottom: 6px;
+  right: 8px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 15px;
+  color: #fff;
+  background-color: #09d32b84;
+}
+
+.contact__button {
+  text-align: center;
+  display: block;
+  width: auto;
+  max-width: 240px;
+
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #2ad027;
+
+  @media screen and (max-width: 290px) {
+    font-size: 14px;
   }
 }
