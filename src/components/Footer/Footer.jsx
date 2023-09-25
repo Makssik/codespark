@@ -8,7 +8,7 @@ import {
 } from 'react-icons/bi';
 const Footer = () => {
   return (
-    <footer id='footer'>
+    <footer id="footer">
       <div className="container">
         <div className="footer__info">
           <h3 className="logo logo--footer">CodeSpark</h3>
@@ -19,19 +19,34 @@ const Footer = () => {
           </ul>
           <ul className="footer__socials">
             <li>
-              <AiFillInstagram />
+              {' '}
+              <a href="https://instagram.com/codesparkua?igshid=OGQ5ZDc2ODk2ZA==">
+                <AiFillInstagram />
+              </a>
             </li>
             <li>
-              <BiLogoFacebookSquare />
+              {' '}
+              <a href="https://www.facebook.com/profile.php?id=61550958997339">
+                <BiLogoFacebookSquare />
+              </a>
             </li>
             <li>
-              <BiLogoLinkedinSquare />
+              {' '}
+              <a href="https://www.linkedin.com/in/code-spark-999909290">
+                <BiLogoLinkedinSquare />
+              </a>
             </li>
             <li>
-              <AiFillYoutube />
+              {' '}
+              <a href="https://youtube.com/@CodeSpark-rr6zh?si=BmlXM50Y6Md85-Av">
+                <AiFillYoutube />
+              </a>
             </li>
             <li>
-              <BiLogoTiktok />
+              {' '}
+              <a href="https://www.tiktok.com/@codesparkua?_t=8fyiFPi3ItZ&_r=1">
+                <BiLogoTiktok />
+              </a>
             </li>
           </ul>
         </div>
@@ -42,13 +57,31 @@ const Footer = () => {
               Напиши нам, якщо маєш питання щодо навчання або потрібна допомога.
               Ми передзвонимо і залюбки поговоримо з тобою
             </p>
+            <p
+              style={{
+                fontSize: '18px',
+                fontWeight: 'bold',
+                textAlign: 'center',
+              }}
+            >
+              Форма тимчасово не працює, тож звертайся до нас в{' '}
+              <span
+                style={{
+                  fontSize: '20px',
+                  color: '#3164f4',
+                  textAlign: 'center',
+                }}
+              >
+                <a href="https://t.me/CodeSparkUA">телеграм</a>
+              </span>
+            </p>
           </div>
           <ContactForm className={'footer__form'} />
         </div>
       </div>
-        <p style={{ textAlign: 'center', marginTop: '40px', marginBottom: 0 }}>
-          2023 © CodeSpark: Your start in coding!
-        </p>
+      <p style={{ textAlign: 'center', marginTop: '40px', marginBottom: 0 }}>
+        2023 © CodeSpark: Your start in coding!
+      </p>
     </footer>
   );
 };
