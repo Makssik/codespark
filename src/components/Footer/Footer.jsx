@@ -14,8 +14,16 @@ const Footer = () => {
           <h3 className="logo logo--footer">CodeSpark</h3>
           <p className="logo__subtitle">Code Children Creative</p>
           <ul className="terms">
-            <li>Privacy Policy</li>
-            <li>Terms Of Service</li>
+            <li>
+              <a href="https://docs.google.com/document/d/1dhHFA9y17HM0WFcckUR7KU6kWf1cog61fcmC2yUUsUA/edit?usp=sharing">
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="https://docs.google.com/document/d/1xHVpZgDwc2wULm-Y_c_PUK-3a404-e4KQhKv0BUrlfg/edit?usp=sharing">
+                Terms Of Service
+              </a>
+            </li>
           </ul>
           <ul className="footer__socials">
             <li>
@@ -57,7 +65,7 @@ const Footer = () => {
               Напиши нам, якщо маєш питання щодо навчання або потрібна допомога.
               Ми передзвонимо і залюбки поговоримо з тобою
             </p>
-            <p
+            <p className='footer__hotfix'
               style={{
                 fontSize: '18px',
                 fontWeight: 'bold',
@@ -65,13 +73,7 @@ const Footer = () => {
               }}
             >
               Форма тимчасово не працює, тож звертайся до нас в{' '}
-              <span
-                style={{
-                  fontSize: '20px',
-                  color: '#3164f4',
-                  textAlign: 'center',
-                }}
-              >
+              <span>
                 <a href="https://t.me/CodeSparkUA">телеграм</a>
               </span>
             </p>

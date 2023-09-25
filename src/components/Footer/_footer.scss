@@ -92,3 +92,14 @@ footer {
 .logo__subtitle {
   margin: 0;
 }
+
+.footer__hotfix {
+  font-size: '18px';
+  font-weight: 'bold';
+  text-align: 'center';
+
+  span{
+    color: $accent;
+    font-size: 20px;
+  }
+}
