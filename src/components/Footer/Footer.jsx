@@ -72,9 +72,9 @@ const Footer = () => {
                 textAlign: 'center',
               }}
             >
-              Форма тимчасово не працює, тож звертайся до нас в{' '}
+              Якщо виникли проблеми з формою, звертайтесь до нашого{' '}
               <span>
-                <a href="https://t.me/CodeSparkUA">телеграм</a>
+                <a href="https://t.me/CodeSparkUA">телеграму</a>
               </span>
             </p>
           </div>

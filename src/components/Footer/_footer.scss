@@ -94,12 +94,10 @@ footer {
 }
 
 .footer__hotfix {
-  font-size: '18px';
-  font-weight: 'bold';
+  font-weight: 400;
   text-align: 'center';
 
-  span{
+  span {
     color: $accent;
-    font-size: 20px;
   }
 }
