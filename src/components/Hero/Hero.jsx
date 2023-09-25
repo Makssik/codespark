@@ -1,5 +1,4 @@
 import React from 'react';
-// import Logo from '../../images/logo-transparent.png';
 import HeroImg from '../../images/hero-img2.png';
 import TryForFreeBtn from '../TryForFreeBtn';
 
@@ -21,7 +20,7 @@ function Hero() {
             Тут ви знайдете короткий опис наших курсів.
           </p>
           <div className="hero__button-group">
-            <TryForFreeBtn className={'button primery'}/>
+            <TryForFreeBtn className={'button primery'} />
           </div>
         </div>
         <div className="hero__logo-wrapper">

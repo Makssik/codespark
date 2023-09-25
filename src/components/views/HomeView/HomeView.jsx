@@ -1,18 +1,16 @@
-import Hero from '../../Hero';
 import OpenRevSect from '../../OpenRevSect';
 import PrivilegesForChild from '../../PrivilegesForChild';
 import EnterToIT from '../../EnterToIT';
 import Reviews from '../../Reviews';
+import WebinarCountdown from '../../WebinarCountdown';
 import { motion } from 'framer-motion';
 import setings from '../../../extension/settingsForInitialTransition';
 
 const HomeView = () => {
   return (
     <>
-      <motion.section {...setings}>
-        <Hero />
-      </motion.section>
-      
+      <WebinarCountdown />
+
       <motion.section {...setings}>
         <OpenRevSect />
       </motion.section>

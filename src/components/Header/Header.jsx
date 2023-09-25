@@ -5,22 +5,22 @@ import Logo from '../../images/logo.png';
 
 const links = [
   {
-    text: 'Home',
+    text: 'Головна',
     path: '/',
     id: '1',
   },
   {
-    text: 'Pricing',
+    text: 'Ціни',
     path: '/pricing',
     id: '2',
   },
   {
-    text: 'About us',
+    text: 'Про нас',
     path: '/about',
     id: '3',
   },
   {
-    text: 'Contact',
+    text: 'Контакти',
     path: '/contact',
     id: '4',
   },

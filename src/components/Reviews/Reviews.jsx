@@ -55,7 +55,7 @@ const Reviews = () => {
         breakpoint: 1140,
         settings: {
           slidesToShow: 2,
-          dots:true,
+          dots: true,
         },
       },
       {
@@ -65,7 +65,7 @@ const Reviews = () => {
           centerMode: true,
           slidesToShow: 1,
           adaptiveHeight: true,
-            arrows: false,
+          arrows: false,
         },
       },
     ],

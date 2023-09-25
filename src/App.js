@@ -22,6 +22,20 @@ function ScrollToTop() {
 function App() {
   return (
     <>
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>

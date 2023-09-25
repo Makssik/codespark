@@ -12,7 +12,7 @@ const EnterToIT = () => {
               Почніть спрощений шлях до підвищення ІТ-компетентності вашої
               дитини
             </p>
-            <TryForFreeBtn className={'button primery'} />
+            <TryForFreeBtn className="button primery"/>
           </div>
           <ul className="enter-to-it__steps-list">
             <li>

@@ -11,7 +11,7 @@ const OpenRevSect = () => {
             Приєднуйтесь до нашої спільноти технологій та розкрийте безмежні
             можливості!
           </p>
-          <TryForFreeBtn className={'button primery'}/>
+          <TryForFreeBtn className={'button primery'} />
         </div>
         <div className="img-wrapper">
           <img
