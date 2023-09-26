@@ -1,0 +1,104 @@
+section.team{
+    // overflow: hidden;
+}
+
+.team__person-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 768px;
+  align-items: center;
+
+  .team__person-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    max-width: 430px;
+  }
+
+  .team__img-wrapper {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .team__person-description-credo {
+    color: rgb(57, 77, 95);
+    font-style: italic;
+  }
+  @media screen and (min-width: 768px) {
+    & {
+      gap: 40px;
+    }
+    .team__person-item {
+      flex-direction: row;
+      gap: 40px;
+      max-width: 550px;
+    }
+    .team__img-wrapper {
+      min-width: 250px;
+      width: 250px;
+      height: 250px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .team__person-description {
+      width: 300px;
+    }
+  }
+}
+
+.team__block {
+  position: relative;
+  @media screen and (min-width: 768px) {
+    & {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 80px 0;
+    }
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+      .tk-blob {
+        right: -320px;
+      }
+    }
+  }
+}
+
+.team__name-profession {
+  font-size: 24px;
+  text-align: center;
+}
+
+.team__name-of-profession {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    & {
+      display: block;
+      position: sticky;
+      top: 60px;
+      font-size: 36px;
+      height: 50px;
+    }
+  }
+}
+
+.tk-blob {
+  position: absolute;
+  top: 15%;
+  right: 70%;
+  --time: 30s;
+  --amount: 5;
+  width: 600px;
+  animation: blob-skew;
+  @media screen and (max-width: 1600px) {
+    display: none;
+  }
+  mix-blend-mode: difference;
+}

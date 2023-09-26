@@ -3,6 +3,7 @@ import AboutUsSection from '../../AboutUsSection';
 import JoinUsSection from '../../JoinUsSection';
 import { motion } from 'framer-motion';
 import setings from '../../../extension/settingsForInitialTransition';
+import TeamSection from '../../TeamSection/TeamSection';
 
 const AboutView = () => {
   return (
@@ -10,6 +11,7 @@ const AboutView = () => {
       <motion.section {...setings}>
         <AboutUsSection />
       </motion.section>
+      <TeamSection />
       {/* <motion.section {...setings}>
         <OurMission />
       </motion.section> */}
