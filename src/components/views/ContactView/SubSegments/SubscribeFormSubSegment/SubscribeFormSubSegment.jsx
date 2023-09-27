@@ -3,19 +3,25 @@ import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 import { IoChevronForward } from 'react-icons/io5';
-// import { useState } from 'react';
+import { useState } from 'react';
 
 const MySwal = withReactContent(Swal);
 
+const Loader = () => {
+  return (
+    <div class="loader-2 center">
+      <span></span>
+    </div>
+  );
+};
+
 const SubscribeFormSubSegment = () => {
-  //   const [isDisabled, setIsDisabled] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const { formState, register, handleSubmit, reset } = useForm();
-  const foo = () => {
-    // console.log(invalid.email);
-  };
   const { isValid } = formState;
 
   const onSubmit = async ({ email }) => {
+    setIsLoading(true);
     try {
       await axiosInstance.post('/email-subscriber', { email });
       MySwal.fire({
@@ -34,6 +40,7 @@ const SubscribeFormSubSegment = () => {
         icon: 'error',
       });
     }
+    setIsLoading(false);
   };
 
   return (
@@ -50,7 +57,6 @@ const SubscribeFormSubSegment = () => {
             className="input--text"
             type="email"
             id="email"
-            onInput={foo}
             {...register('email', {
               required: true,
               pattern: /^[\w-]+(\.[\w-]+)*@[\w-]{2,}/,
@@ -62,10 +68,23 @@ const SubscribeFormSubSegment = () => {
         </div>
         <button
           className={`contact__button-submit`}
-          disabled={!isValid}
+          disabled={!isValid || isLoading}
           type="submit"
         >
-          <IoChevronForward />
+          {isLoading ? (
+            <div className="loader-wrapper">
+              <Loader />
+            </div>
+          ) : (
+            <IoChevronForward
+              style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+              }}
+            />
+          )}
         </button>
       </form>
     </li>
