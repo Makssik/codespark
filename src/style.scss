@@ -2,11 +2,13 @@
 @import './sass/mixins';
 @import './sass/basedecoration';
 @import './sass/basedecoration';
-@import './sass/blobz';
 // @import './components/views/HomeView/homeview';
 // @import './components/views/PriceView/priceview';
 // @import './components/views/AboutView/aboutview';
 @import './components/views/ContactView/contact-view';
+@import './components/views/ContactView/SubSegments/PhoneSubSegment/phone-sub-content';
+@import './components/views/ContactView/SubSegments/ContactBtnSubSegment/contact-btn-sub-segment';
+@import './components/views/ContactView/SubSegments/SubscribeFormSubSegment/subscribe-form-sub-segment';
 @import './components/Header/header';
 @import './components/Footer/footer';
 @import './components/QuesAndAns/quesAndAns';
@@ -28,4 +30,3 @@
 @import './components/WebinarCountdown/webinar';
 @import './components/SocialsList/socials-list';
 @import './components/TeamSection/team-section';
-

@@ -29,7 +29,6 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  width: clamp(100px, 180px, 300px);
 
   padding: 8px 18px;
   letter-spacing: 0.06em;
@@ -59,6 +58,6 @@
 @mixin input--text {
   font-size: 18px;
   padding: 10px 15px;
-  // border: 1px solid grey;
   border-radius: 10px;
+  height: 44px;
 }
