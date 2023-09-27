@@ -1,25 +1,7 @@
-const curses = [
-  {
-    price: '2930',
-    name: 'Basic',
-    countOfLessons: '6',
-    description: 'For individuals and small teams',
-  },
-  {
-    price: '5720',
-    name: 'Standart',
-    countOfLessons: '12',
-    description: 'For startups and growing businesses',
-  },
-  {
-    price: '10520',
-    name: 'Extra',
-    countOfLessons: '24',
-    description: 'For organizations with advanced needs',
-  },
-];
+import { curses } from './cursesList';
 
-const PricesList = () => {
+const PricesList = ({openModal}) => {
+  // console.log(props);
   return (
     <section>
       <div className="container">
@@ -38,9 +20,10 @@ const PricesList = () => {
                 </p>
                 <p>{curse.description}</p>
                 <button
+                  onClick={openModal}
                   className={`button ${index === 1 ? 'primery' : 'secondary'}`}
                 >
-                  Get Started with {curse.name}
+                  Розпочни з набором {curse.name}
                 </button>
               </li>
             );

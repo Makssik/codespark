@@ -1,28 +1,11 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+
+import { curses } from './cursesList';
 import { useState } from 'react';
-const curses = [
-  {
-    price: '2930',
-    name: 'Basic',
-    countOfLessons: '6',
-    description: 'For individuals and small teams',
-  },
-  {
-    price: '5720',
-    name: 'Standart',
-    countOfLessons: '12',
-    description: 'For startups and growing businesses',
-  },
-  {
-    price: '10520',
-    name: 'Extra',
-    countOfLessons: '24',
-    description: 'For organizations with advanced needs',
-  },
-];
-const SliderPricesList = () => {
+
+const SliderPricesList = ({openModal}) => {
   const initialSlide = 1;
   const [activeSlide, setActiveSlide] = useState(initialSlide);
 
@@ -72,11 +55,12 @@ const SliderPricesList = () => {
                       </p>
                       <p>{description}</p>
                       <button
+                        onClick={openModal}
                         className={`button ${
                           index === activeSlide ? 'primery' : 'secondary'
                         }`}
                       >
-                        Get Started with {name}
+                        Розпочни з набором {name}
                       </button>
                     </div>
                   </div>
