@@ -4,7 +4,7 @@ import TeacherMaks1Img from '../../images/team/teacher-maks1.jpg';
 import TeacherMaksImg from '../../images/team/teacher-maks.jpg';
 import ManagerAnnaImg from '../../images/team/manager-anna.jpg';
 import ManagerDariaImg from '../../images/team/manager-daria.jpg';
-import ManagerMargaritaImg from '../../images/team/manager-margarita.jpg';
+import ManagerVeronikaImg from '../../images/team/manager-veronika.jpg';
 import DesignerAbleImg from '../../images/team/designer-able.jpg';
 import DesignerDenisImg from '../../images/team/designer-denis.jpg';
 
@@ -68,8 +68,8 @@ const teamList = {
           'Менеджер - це той, хто знаходить рішення навіть там, де немає проблем!',
       },
       {
-        name: 'Маргарита Ігорівна',
-        imgSrc: ManagerMargaritaImg,
+        name: 'Вероніка Олегівна',
+        imgSrc: ManagerVeronikaImg,
         credo:
           'Менеджер - це той, хто бачить можливості там, де інші бачать тільки перешкоди, і завжди знаходить шлях до успіху, навіть якщо цей шлях треба буде створити з нуля!',
       },
