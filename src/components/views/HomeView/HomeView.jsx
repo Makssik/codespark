@@ -11,6 +11,15 @@ const HomeView = () => {
   return (
     <>
       <Helmet>
+        <meta name="revisit-after" content="7 days" />
+        <meta
+          name="og:title"
+          content="CodeSpark: Курси програмування для дітей безкоштовно. Навчимо дітей від 8 до 14 років програмувати з нуля за 4 місяці. Children Code Creative"
+        />
+        <meta
+          name="og:description"
+          content="Безкоштовний пробний урок. Зробимо вашу дитину Python-програмістом з нуля за 4 місяці на онлайн курсах - CodeSpark. ☎️(093)080-6375. 70% наших клієнтів отримали якісну почву для старту в IT. Досвідчені викладачі які є професіоналами в своїй галузі, Ефективна програма навчання. Доступна ціна навчнання. "
+        />
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
