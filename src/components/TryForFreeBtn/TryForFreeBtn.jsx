@@ -12,7 +12,7 @@ const TryForFreeBtn = ({ className }) => {
       offset={-20}
       duration={500}
     >
-      Try For Free
+      Спробуй безкоштовно
     </Link>
   );
 };
