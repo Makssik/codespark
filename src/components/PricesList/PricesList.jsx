@@ -5,7 +5,7 @@ const PricesList = ({openModal}) => {
   return (
     <section>
       <div className="container">
-        <h2>Pricing</h2>
+        <h2>Цінова політика</h2>
         <p className="subtitle">
           Ціна у нас не дорога, але й не дешева, саме така має бути
         </p>
