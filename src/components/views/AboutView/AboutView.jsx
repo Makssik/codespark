@@ -1,5 +1,4 @@
 import AboutUsSection from '../../AboutUsSection';
-// import OurMission from '../../OurMission';
 import JoinUsSection from '../../JoinUsSection';
 import { motion } from 'framer-motion';
 import setings from '../../../extension/settingsForInitialTransition';

@@ -1,4 +1,4 @@
-import SoftwareImg from '../../images/software-img.jpg';
+import SoftwareImg from '../../images/software-img.webp';
 import TryForFreeBtn from '../TryForFreeBtn';
 
 const OpenRevSect = () => {

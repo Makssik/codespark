@@ -1,4 +1,4 @@
-import JoinToUsImg from '../../images/join-to-us.jpg';
+import JoinToUsImg from '../../images/join-to-us.webp';
 import TryForFreeBtn from '../TryForFreeBtn';
 
 const JoinToUsSection = () => {

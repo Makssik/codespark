@@ -1,4 +1,4 @@
-import GroupOfPeople from '../../images/group-of-people.jpg';
+import GroupOfPeople from '../../images/group-of-people.webp';
 import TryForFreeBtn from '../TryForFreeBtn';
 
 const EnterToIT = () => {

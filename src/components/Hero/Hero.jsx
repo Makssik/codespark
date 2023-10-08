@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroImg from '../../images/hero-img2.png';
+import HeroImg from '../../images/hero-img2.webp';
 import TryForFreeBtn from '../TryForFreeBtn';
 
 function Hero() {

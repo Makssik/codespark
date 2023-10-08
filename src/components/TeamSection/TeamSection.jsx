@@ -1,12 +1,12 @@
 /* eslint-disable react/style-prop-object */
-import FounderBohdanImg from '../../images/team/founder-bohdan.jpg';
-import TeacherMaks1Img from '../../images/team/teacher-maks1.jpg';
-import TeacherMaksImg from '../../images/team/teacher-maks.jpg';
-import ManagerAnnaImg from '../../images/team/manager-anna.jpg';
-import ManagerDariaImg from '../../images/team/manager-daria.jpg';
-import ManagerVeronikaImg from '../../images/team/manager-veronika.jpg';
-import DesignerAbleImg from '../../images/team/designer-able.jpg';
-import DesignerDenisImg from '../../images/team/designer-denis.jpg';
+import FounderBohdanImg from '../../images/team/founder-bohdan.webp';
+import TeacherMaks1Img from '../../images/team/teacher-maks1.webp';
+import TeacherMaksImg from '../../images/team/teacher-maks.webp';
+import ManagerAnnaImg from '../../images/team/manager-anna.webp';
+import ManagerDariaImg from '../../images/team/manager-daria.webp';
+import ManagerVeronikaImg from '../../images/team/manager-veronika.webp';
+import DesignerAbleImg from '../../images/team/designer-able.webp';
+import DesignerDenisImg from '../../images/team/designer-denis.webp';
 
 import { motion } from 'framer-motion';
 import setings from '../../extension/settingsForInitialTransition';

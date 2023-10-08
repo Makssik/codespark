@@ -2,12 +2,12 @@ import QuesAndAns from '../../QuesAndAns';
 import PricesList from '../../PricesList';
 import SliderPricesList from '../../PricesList/SliderPricesList';
 import RoadMap from '../../RoadMap';
-import RoadMapImg from '../../../images/road-map.png';
+import RoadMapImg from '../../../images/road-map.webp';
 import { useState } from 'react';
 import ReactModal from 'react-modal';
-import MonoLogoImg from '../../../images/banks/mono.png';
-import ABankLogoImg from '../../../images/banks/a-bank.png';
-import PrivatLogoImg from '../../../images/banks/privat.png';
+import MonoLogoImg from '../../../images/banks/mono.webp';
+import ABankLogoImg from '../../../images/banks/a-bank.webp';
+import PrivatLogoImg from '../../../images/banks/privat.webp';
 import { Helmet } from 'react-helmet';
 
 const customStyles = {

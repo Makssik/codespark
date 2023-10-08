@@ -1,5 +1,5 @@
-import ChildImg1 from '../../images/child-1.jpg';
-import ChildImg2 from '../../images/child-2.jpg';
+import ChildImg1 from '../../images/child-1.webp';
+import ChildImg2 from '../../images/child-2.webp';
 import TryForFreeBtn from '../TryForFreeBtn';
 
 const PrivilegesForChild = () => {

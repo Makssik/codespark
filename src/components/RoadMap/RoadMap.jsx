@@ -2,7 +2,7 @@ import useWindowSize from 'react-use/lib/useWindowSize';
 import Confetti from 'react-confetti';
 import { useState, useRef, useEffect } from 'react';
 import { RoadBigStep, RoadStep } from './RoadStep';
-import RocketImg from '../../images/rocket.png';
+import RocketImg from '../../images/rocket.webp';
 import Slider from 'react-slick';
 import {
   BsFillArrowLeftCircleFill,

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import Logo from '../../images/logo.png';
+import Logo from '../../images/logo.webp';
 
 const links = [
   {

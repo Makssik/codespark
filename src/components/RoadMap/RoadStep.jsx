@@ -1,4 +1,4 @@
-import NotepadImg from '../../images/notepad.png';
+import NotepadImg from '../../images/notepad.webp';
 export const RoadBigStep = ({ text, img }) => {
   return (
     <div className="road-step">
