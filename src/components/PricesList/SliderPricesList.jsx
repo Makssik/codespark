@@ -29,7 +29,7 @@ const SliderPricesList = ({openModal}) => {
   return (
     <section className="price">
       <div className="container">
-        <h1>Цінова політика</h1>
+        <h1 className='title' style={{textAlign: 'center'}}>Тарифи</h1>
         <p className="subtitle">
           Ціна у нас не дорога, але й не дешева, саме така має бути
         </p>

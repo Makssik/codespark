@@ -10,7 +10,7 @@ const links = [
     id: '1',
   },
   {
-    text: 'Ціни',
+    text: 'Тарифи',
     path: '/pricing',
     id: '2',
   },

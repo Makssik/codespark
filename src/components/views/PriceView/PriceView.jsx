@@ -39,7 +39,7 @@ const PriceView = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="title"
-          content="CodeSpark: Цінова політика. Ми пропонуємо доступні ціни. План навчання. Навчимо дітей від 8 до 14 років програмувати з нуля за 4 місяці.Шлях до вивчення програмування разом з CodeSpark. Children Code Creative"
+          content="CodeSpark: Тарифи. Ми пропонуємо доступні ціни. План навчання. Навчимо дітей від 8 до 14 років програмувати з нуля за 4 місяці.Шлях до вивчення програмування разом з CodeSpark. Children Code Creative"
         />
         <meta
           name="description"
@@ -48,7 +48,7 @@ const PriceView = () => {
         <meta name="revisit-after" content="7 days" />
         <meta
           name="og:title"
-          content="CodeSpark: Цінова політика. Ми пропонуємо доступні ціни. План навчання. Навчимо дітей від 8 до 14 років програмувати з нуля за 4 місяці.Шлях до вивчення програмування разом з CodeSpark. Children Code Creative"
+          content="CodeSpark: Тарифи. Ми пропонуємо доступні ціни. План навчання. Навчимо дітей від 8 до 14 років програмувати з нуля за 4 місяці.Шлях до вивчення програмування разом з CodeSpark. Children Code Creative"
         />
         <meta
           name="og:description"
@@ -72,7 +72,7 @@ const PriceView = () => {
         overlayClassName="modal__overlay"
         className={'price__modal'}
       >
-        <h2>Здійсніть оплату зручним для вас способом</h2>
+        <h2 className='title'>Здійсніть оплату зручним для вас способом</h2>
 
         <ul className="price__list-of-banks">
           <li>
