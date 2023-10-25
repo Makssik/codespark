@@ -6,7 +6,7 @@ import Hero from '../../Hero';
 import { motion } from 'framer-motion';
 import setings from '../../../extension/settingsForInitialTransition';
 import { Helmet } from 'react-helmet';
-import faviconImg from '../../../images/favicon.ico';
+// import faviconImg from '../../../images/favicon.ico';
 
 const HomeView = () => {
   return (
@@ -14,24 +14,34 @@ const HomeView = () => {
       <Helmet>
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://codespark.com.ua/courses" />
+        <link
+          rel="icon"
+          href="https://raw.githubusercontent.com/Makssik/codespark/main/src/images/favicon.ico"
+        />
         <meta
           name="title"
-          content="CodeSpark - Курси програмування для дітей. Навчимо дітей від 8 до 14 років програмувати з нуля за 4 місяці"
+          content="CodeSpark: Навчимо дітей від 4 до 16 років програмувати з нуля за 4 місяці."
         />
-        <meta
-          name="og:title"
-          content="CodeSpark - Курси програмування для дітей. Навчимо дітей від 8 до 14 років програмувати з нуля за 4 місяці"
-        />
+        <meta name="keywords" content="" />
         <meta
           name="description"
-          content="Онлайн курси програмування Python.Безкоштовний пробний урок. Зробимо вашу дитину Python-програмістом з нуля за 4 місяці на онлайн курсах - CodeSpark. ☎️(093)080-6375. 70% наших клієнтів отримали якісну почву для старту в IT. Досвідчені викладачі які є професіоналами в своїй галузі, Ефективна програма навчання. Доступна ціна навчнання. "
+          content="Безкоштовний пробний урок. Зробимо вашу дитину Python-програмістом з нуля за 4 місяці на онлайн курсах - CodeSpark. ☎️(093)080-6375. 70% наших клієнтів отримали якісну почву для старту в IT. Досвідчені викладачі які є професіоналами в своїй галузі, Ефективна програма навчання. Доступна ціна навчання. "
+        />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:title"
+          content="Курси програмування онлайн з нуля для дітей"
         />
         <meta
-          name="og:description"
-          content="Онлайн курси програмування Python.Безкоштовний пробний урок. Зробимо вашу дитину Python-програмістом з нуля за 4 місяці на онлайн курсах - CodeSpark. ☎️(093)080-6375. 70% наших клієнтів отримали якісну почву для старту в IT. Досвідчені викладачі які є професіоналами в своїй галузі, Ефективна програма навчання. Доступна ціна навчнання. "
+          property="og:description"
+          content="Безкоштовний пробний урок. Зробимо вашу дитину Python-програмістом з нуля за 4 місяці на онлайн курсах - CodeSpark. ☎️(093)080-6375. 70% наших клієнтів отримали якісну почву для старту в IT. Досвідчені викладачі які є професіоналами в своїй галузі, Ефективна програма навчання. Доступна ціна навчання. "
         />
-        <meta name="revisit-after" content="24 hours" />
-        <link rel="icon" href={faviconImg} />
+        <meta property="og:url" content="https://codespark.com.ua/" />
+        <meta
+          property="og:image"
+          content="https://raw.githubusercontent.com/Makssik/codespark/main/src/images/favicon.ico"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="keywords"
@@ -43,7 +53,17 @@ const HomeView = () => {
         />
       </Helmet>
       <motion.section {...setings}>
-        <Hero />
+        <Hero subtitle={'Тут ви знайдете короткий опис наших курсів'}>
+          <h1 className="hero__title title">
+            Відкрий світ знань
+            <br />
+            із нашими
+            <br />
+            онлайн-курсами
+            <br />
+            для дітей!
+          </h1>
+        </Hero>
       </motion.section>
 
       <motion.section {...setings}>

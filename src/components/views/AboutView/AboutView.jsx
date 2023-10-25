@@ -11,25 +11,38 @@ const AboutView = () => {
       <Helmet>
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow" />
+        <meta name="revisit-after" content="7 days" />
+        <link rel="canonical" href="https://codespark.com.ua/courses" />
+        <link
+          rel="icon"
+          href="https://raw.githubusercontent.com/Makssik/codespark/main/src/images/favicon.ico"
+        />
         <meta
           name="title"
-          content="CodeSpark: Про нас. Ми пропонуємо революційний підхід до навчання ІТ. Навчимо дітей від 8 до 14 років програмувати з нуля за 4 місяці. Children Code Creative "
+          content="Про нас :CodeSpark | Інформація про курси та викладачів "
+        />
+        <meta
+          name="keywords"
+          content="команда кодспарк, про курси кодспарк, інформація про курси кодспарк, кодспарк викладачі"
         />
         <meta
           name="description"
-          content="Безкоштовний пробний урок. Зробимо вашу дитину Python-програмістом з нуля за 4 місяці на онлайн курсах - CodeSpark. ☎️(093)080-6375. 70% наших клієнтів отримали якісну почву для старту в IT. Досвідчені викладачі які є професіоналами в своїй галузі, Ефективна програма навчання. Приєднуйтесь до CodeSpark спільноти та даруйте своїй дитині можливість відкрити світ комп'ютерних знань та творчості вже сьогодні!"
+          content="Основна інформація про навчання і викладачів | CodeSpark ☎️(093)080-6375. "
         />
-        <meta name="revisit-after" content="7 days" />
+        <meta property="og:type" content="article" />
         <meta
           name="og:title"
-          content="CodeSpark: Про нас. Ми пропонуємо революційний підхід до навчання ІТ. Навчимо дітей від 8 до 14 років програмувати з нуля за 4 місяці. Children Code Creative"
+          content="Про нас :CodeSpark | Інформація про курси та викладачів "
         />
         <meta
-          name="og:description"
-          content="Безкоштовний пробний урок. Зробимо вашу дитину Python-програмістом з нуля за 4 місяці на онлайн курсах - CodeSpark. ☎️(093)080-6375. 70% наших клієнтів отримали якісну почву для старту в IT. Досвідчені викладачі які є професіоналами в своїй галузі, Ефективна програма навчання. Приєднуйтесь до CodeSpark спільноти та даруйте своїй дитині можливість відкрити світ комп'ютерних знань та творчості вже сьогодні!"
+          property="og:description"
+          content="Основна інформація про навчання і викладачів | CodeSpark ☎️(093)080-6375. "
         />
-        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:url" content="https://codespark.com.ua/about" />
+        <meta
+          property="og:image"
+          content="https://raw.githubusercontent.com/Makssik/codespark/main/src/images/favicon.ico"
+        ></meta>
         <meta
           name="keywords"
           content="CodeSpark, codespark, code spark, код спарк, кодспарк, Курси програмування, Курси програмування для дітей, Python курси для дітей, курси пайтон для дітей, Навчання програмування, візуальне програмування"

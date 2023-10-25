@@ -5,6 +5,7 @@ import HomeView from './components/views/HomeView';
 import PriceView from './components/views/PriceView';
 import AboutView from './components/views/AboutView';
 import ContactView from './components/views/ContactView';
+import CoursesView from './components/views/CoursesView';
 import { useEffect } from 'react';
 
 function ScrollToTop() {
@@ -17,7 +18,6 @@ function ScrollToTop() {
 
   return null; // Этот компонент не отображает ничего на экране
 }
-
 
 function App() {
   return (
@@ -43,6 +43,7 @@ function App() {
           <Route path="pricing" element={<PriceView />} />
           <Route path="about" element={<AboutView />} />
           <Route path="contact" element={<ContactView />} />
+          <Route path="courses" element={<CoursesView />} />
         </Route>
       </Routes>
     </>

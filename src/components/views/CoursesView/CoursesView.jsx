@@ -1,12 +1,12 @@
-import QuesAndAns from '../../QuesAndAns';
-import PricesList from '../../PricesList';
-import SliderPricesList from '../../PricesList/SliderPricesList';
-import RoadMap from '../../RoadMap';
-import { useState } from 'react';
-import ReactModal from 'react-modal';
+import Hero from '../../Hero';
 import MonoLogoImg from '../../../images/banks/mono.webp';
 import ABankLogoImg from '../../../images/banks/a-bank.webp';
 import PrivatLogoImg from '../../../images/banks/privat.webp';
+import PricesList from '../../PricesList';
+import SliderPricesList from '../../PricesList/SliderPricesList';
+import RoadMap from '../../RoadMap';
+import ReactModal from 'react-modal';
+import { useState } from 'react';
 import { Helmet } from 'react-helmet';
 
 const customStyles = {
@@ -20,7 +20,8 @@ const customStyles = {
   },
 };
 
-const PriceView = () => {
+const isMobile = window.matchMedia('(max-width: 768px)').matches;
+const CoursesView = () => {
   const [isOpen, setIsOpen] = useState(false);
   function openModal() {
     setIsOpen(true);
@@ -29,13 +30,10 @@ const PriceView = () => {
   function closeModal() {
     setIsOpen(false);
   }
-  const isMobile = window.matchMedia('(max-width: 768px)').matches;
   return (
     <>
       <Helmet>
-        <meta charset="UTF-8" />
-        <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="canonical" href="https://codespark.com.ua/courses" />
         <link
           rel="icon"
@@ -43,12 +41,12 @@ const PriceView = () => {
         />
         <meta
           name="title"
-          content="CodeSpark: Вартість курсів програмування онлайн з нуля для дітей"
+          content="CodeSpark: Курси програмування онлайн з нуля для дітей"
         />
-        <meta name="keywords" content="кодспарк ціна, кодспарк вартість, " />
+        <meta name="keywords" content="курси програмування" />
         <meta
           name="description"
-          content="Реєструйтесь на безкоштовний пробний урок у CodeSpark. Вартість проходження курсів у CodeSpark. ☎️(093)080-6375. 70% наших клієнтів отримали якісну почву для старту в IT. Досвідчені викладачі які є професіоналами в своїй галузі, Ефективна програма навчання. Доступна ціна навчання. "
+          content="Зробимо вашу дитину Python-програмістом з нуля за 4 місяці на онлайн курсах - CodeSpark. Безкоштовний пробний урок. ☎️(093)080-6375. 70% наших клієнтів отримали якісну почву для старту в IT. Досвідчені викладачі які є професіоналами в своїй галузі, Ефективна програма навчання. Доступна ціна навчання. "
         />
         <meta property="og:type" content="article" />
         <meta
@@ -57,22 +55,26 @@ const PriceView = () => {
         />
         <meta
           property="og:description"
-          content="Реєструйтесь на безкоштовний пробний урок у CodeSpark. Вартість проходження курсів у CodeSpark. ☎️(093)080-6375. 70% наших клієнтів отримали якісну почву для старту в IT. Досвідчені викладачі які є професіоналами в своїй галузі, Ефективна програма навчання. Доступна ціна навчання. "
+          content="Зробимо вашу дитину Python-програмістом з нуля за 4 місяці на онлайн курсах - CodeSpark. Безкоштовний пробний урок. ☎️(093)080-6375. 70% наших клієнтів отримали якісну почву для старту в IT. Досвідчені викладачі які є професіоналами в своїй галузі, Ефективна програма навчання. Доступна ціна навчання. "
         />
-        <meta property="og:url" content="https://codespark.com.ua/pricing" />
+        <meta property="og:url" content="https://codespark.com.ua/courses" />
         <meta
           property="og:image"
           content="https://raw.githubusercontent.com/Makssik/codespark/main/src/images/favicon.ico"
         />
-        <meta
-          name="keywords"
-          content="CodeSpark, codespark, code spark, код спарк, кодспарк, Курси програмування, Курси програмування для дітей, Python курси для дітей, курси пайтон для дітей, Навчання програмування, візуальне програмування"
-        />
-        <meta
-          name="keywords"
-          content="Обучение програмирования, Курсы для детей, Python курсы для детей, Python для детей, Python для дітей, програмування з нуля"
-        />
       </Helmet>
+
+      <Hero
+        subtitle={
+          'Курси програмування для дітей безкоштовно. Навчимо дітей від 8 до 14 років програмувати з нуля за 4 місяці.	'
+        }
+      >
+        <h1 className="hero__title title">
+          CodeSpark: Якісні онлайн-курси з програмування для дітей у зручний для
+          вас час
+        </h1>
+      </Hero>
+
       <ReactModal
         style={customStyles}
         onRequestClose={closeModal}
@@ -114,9 +116,8 @@ const PriceView = () => {
         <PricesList openModal={openModal} />
       )}
       <RoadMap />
-      <QuesAndAns />
     </>
   );
 };
 
-export default PriceView;
+export default CoursesView;

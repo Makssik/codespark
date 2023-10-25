@@ -10,6 +10,11 @@ const links = [
     id: '1',
   },
   {
+    text: 'Курси',
+    path: '/courses',
+    id: '5',
+  },
+  {
     text: 'Тарифи',
     path: '/pricing',
     id: '2',

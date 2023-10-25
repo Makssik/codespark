@@ -11,6 +11,9 @@ import {
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import ProgressBar from '../ProgressBar';
+
+
+import RoadMapImg from '../../images/road-map.webp';
 const RoadMap = () => {
   const { width } = useWindowSize();
     const [confetti, setConfetti] = useState(false);
@@ -50,33 +53,44 @@ const RoadMap = () => {
       beforeChange: (current, next) => setCurrentSlide(next),
     };
   return (
-    <section className="road-map">
-      {confetti && <Confetti width={width} height="1500px" />}
-      <div className="container">
-        <h2>Твій шлях в IT</h2>
-        <div className="road-map__slider-with-buttons">
-          <div className="custom-arrow" onClick={handlePrevSlide}>
-            <BsFillArrowLeftCircleFill />
-          </div>
-          <div className="road-map__slider-wrapper">
-            <Slider ref={sliderRef} {...sliderSetings}>
-              <RoadBigStep text={'Візуальне програмування'} img={RocketImg} />
-              <RoadStep text={'Початковий рівень'} number={'1'} />
-              <RoadStep text={'Середній   рівень'} number={'2'} />
-              <RoadStep text={'Просунутий рівень'} number={'3'} />
-              <RoadBigStep text={'Вивчення Python'} img={RocketImg} />
-              <RoadStep text={'Початковий рівень'} number={'4'} />
-              <RoadStep text={'Середній   рівень'} number={'5'} />
-              <RoadStep text={'Просунутий рівень'} number={'6'} />
-            </Slider>
-          </div>
-          <div className="custom-arrow" onClick={handleNextSlide}>
-            <BsFillArrowRightCircleFill />
-          </div>
+    <>
+      <section className="road-map__section--img">
+        <div className="container">
+          <h2 className="title">
+            Шлях до вивчення програмування
+            <br /> разом з CodeSpark
+          </h2>
+          <img width={'100%'} src={RoadMapImg} alt="" />
         </div>
-        <ProgressBar progress={progress} />
-      </div>
-    </section>
+      </section>
+      <section className="road-map">
+        {confetti && <Confetti width={width} height="1500px" />}
+        <div className="container">
+          <h2>Твій шлях в IT</h2>
+          <div className="road-map__slider-with-buttons">
+            <div className="custom-arrow" onClick={handlePrevSlide}>
+              <BsFillArrowLeftCircleFill />
+            </div>
+            <div className="road-map__slider-wrapper">
+              <Slider ref={sliderRef} {...sliderSetings}>
+                <RoadBigStep text={'Візуальне програмування'} img={RocketImg} />
+                <RoadStep text={'Початковий рівень'} number={'1'} />
+                <RoadStep text={'Середній   рівень'} number={'2'} />
+                <RoadStep text={'Просунутий рівень'} number={'3'} />
+                <RoadBigStep text={'Вивчення Python'} img={RocketImg} />
+                <RoadStep text={'Початковий рівень'} number={'4'} />
+                <RoadStep text={'Середній   рівень'} number={'5'} />
+                <RoadStep text={'Просунутий рівень'} number={'6'} />
+              </Slider>
+            </div>
+            <div className="custom-arrow" onClick={handleNextSlide}>
+              <BsFillArrowRightCircleFill />
+            </div>
+          </div>
+          <ProgressBar progress={progress} />
+        </div>
+      </section>
+    </>
   );
 };
 

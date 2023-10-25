@@ -4,9 +4,8 @@ import TeacherMaks1Img from '../../images/team/teacher-maks1.webp';
 import TeacherMaksImg from '../../images/team/teacher-maks.webp';
 import ManagerAnnaImg from '../../images/team/manager-anna.webp';
 import ManagerDariaImg from '../../images/team/manager-daria.webp';
-import ManagerVeronikaImg from '../../images/team/manager-veronika.webp';
-import DesignerAbleImg from '../../images/team/designer-able.webp';
 import DesignerDenisImg from '../../images/team/designer-denis.webp';
+import DesignerOlexandraImg from '../../images/team/designer-olexandra.webp';
 
 import { motion } from 'framer-motion';
 import setings from '../../extension/settingsForInitialTransition';
@@ -39,8 +38,8 @@ const teamList = {
     descriptionOfProfession: 'Команда дизайнерів',
     list: [
       {
-        name: 'Нурсултан Богданович',
-        imgSrc: DesignerAbleImg,
+        name: 'Олександра Сергіївна',
+        imgSrc: DesignerOlexandraImg,
         credo:
           'Дизайнер - це той, хто перетворює звичайні речі в шедеври мистецтва, і навіть найзвичайніший продукт може стати предметом захоплення завдяки його творчій руці!',
       },
@@ -66,12 +65,6 @@ const teamList = {
         imgSrc: ManagerDariaImg,
         credo:
           'Менеджер - це той, хто знаходить рішення навіть там, де немає проблем!',
-      },
-      {
-        name: 'Вероніка Олегівна',
-        imgSrc: ManagerVeronikaImg,
-        credo:
-          'Менеджер - це той, хто бачить можливості там, де інші бачать тільки перешкоди, і завжди знаходить шлях до успіху, навіть якщо цей шлях треба буде створити з нуля!',
       },
     ],
   },

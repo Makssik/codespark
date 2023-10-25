@@ -10,14 +10,34 @@ const ContactView = () => {
       <Helmet>
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          name="title"
-          content="CodeSpark: Контакти. Онлайн консультація. Навчимо дітей від 8 до 14 років програмувати з нуля за 4 місяці. Записатись на курси програмування для дітей. Children Code Creative"
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="canonical" href="https://codespark.com.ua/courses" />
+        <link
+          rel="icon"
+          href="https://raw.githubusercontent.com/Makssik/codespark/main/src/images/favicon.ico"
         />
         <meta
+          name="title"
+          content="CodeSpark: Контакти, Онлайн-консультація з питань курсів "
+        />
+        <meta name="keywords" content="" />
+        <meta
           name="description"
-          content="Залишились запитання? Ось наші контакти, будемо раді вашому дзвінку. Шлях до вивчення програмування разом з CodeSpark. Відоповіді на поширені питання. План навчання. Безкоштовний пробний урок. Зробимо вашу дитину Python-програмістом з нуля за 4 місяці на онлайн курсах - CodeSpark. ☎️(093)080-6375. 70% наших клієнтів отримали якісну почву для старту в IT. Досвідчені викладачі які є професіоналами в своїй галузі, Ефективна програма навчання. Приєднуйтесь до CodeSpark спільноти та даруйте своїй дитині можливість відкрити світ комп'ютерних знань та творчості вже сьогодні!"
+          content="Ми на зв'язку з вами кожен день | Номер телефону, пошта та інші контакти codespark ☎️(093)080-6375. "
+        />
+        <meta property="og:type" content="article" />
+        <meta
+          name="og:title"
+          content="CodeSpark: Контакти, Онлайн-консультація з питань курсів "
+        />
+        <meta
+          property="og:description"
+          content="Ми на зв'язку з вами кожен день | Номер телефону, пошта та інші контакти codespark ☎️(093)080-6375. "
+        />
+        <meta property="og:url" content="https://codespark.com.ua/contact" />
+        <meta
+          property="og:image"
+          content="https://raw.githubusercontent.com/Makssik/codespark/main/src/images/favicon.ico"
         />
         <meta
           name="keywords"
@@ -28,15 +48,6 @@ const ContactView = () => {
           content="Обучение програмирования, Курсы для детей, Python курсы для детей, Python для детей, Python для дітей, програмування з нуля"
         />
         <meta name="revisit-after" content="7 days" />
-        <meta
-          name="og:title"
-          content="CodeSpark: Контакти. Онлайн консультація. Навчимо дітей від 8 до 14 років програмувати з нуля за 4 місяці. Записатись на курси програмування для дітей. Children Code Creative"
-        />
-        <meta
-          name="og:description"
-          content="Залишились запитання? Ось наші контакти, будемо раді вашому дзвінку. Шлях до вивчення програмування разом з CodeSpark. Відоповіді на поширені питання. План навчання. Безкоштовний пробний урок. Зробимо вашу дитину Python-програмістом з нуля за 4 місяці на онлайн курсах - CodeSpark. ☎️(093)080-6375. 70% наших клієнтів отримали якісну почву для старту в IT. Досвідчені викладачі які є професіоналами в своїй галузі, Ефективна програма навчання. Приєднуйтесь до CodeSpark спільноти та даруйте своїй дитині можливість відкрити світ комп'ютерних знань та творчості вже сьогодні!"
-        />
-        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
       </Helmet>
       <section className="contact">
         <div className="container">

@@ -2,22 +2,14 @@ import React from 'react';
 import HeroImg from '../../images/hero-img2.webp';
 import TryForFreeBtn from '../TryForFreeBtn';
 
-function Hero() {
+function Hero({subtitle, children}) {
   return (
     <section className="hero">
       <div className="container">
         <div className="hero__half-wrapper">
-          <h1 className="hero__title title">
-            Відкрий світ знань
-            <br />
-            із нашими
-            <br />
-            онлайн-курсами
-            <br />
-            для дітей!
-          </h1>
+          {children}
           <p className="hero__subtitle subtitle">
-            Тут ви знайдете короткий опис наших курсів.
+            {subtitle}
           </p>
           <div className="hero__button-group">
             <TryForFreeBtn className={'button primery'} />
