@@ -37,10 +37,6 @@ const PriceView = () => {
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://codespark.com.ua/courses" />
-        <link
-          rel="icon"
-          href="https://raw.githubusercontent.com/Makssik/codespark/main/src/images/favicon.ico"
-        />
         <meta
           name="title"
           content="CodeSpark: Вартість курсів програмування онлайн з нуля для дітей"
@@ -60,10 +56,6 @@ const PriceView = () => {
           content="Реєструйтесь на безкоштовний пробний урок у CodeSpark. Вартість проходження курсів у CodeSpark. ☎️(093)080-6375. 70% наших клієнтів отримали якісну почву для старту в IT. Досвідчені викладачі які є професіоналами в своїй галузі, Ефективна програма навчання. Доступна ціна навчання. "
         />
         <meta property="og:url" content="https://codespark.com.ua/pricing" />
-        <meta
-          property="og:image"
-          content="https://raw.githubusercontent.com/Makssik/codespark/main/src/images/favicon.ico"
-        />
         <meta
           name="keywords"
           content="CodeSpark, codespark, code spark, код спарк, кодспарк, Курси програмування, Курси програмування для дітей, Python курси для дітей, курси пайтон для дітей, Навчання програмування, візуальне програмування"

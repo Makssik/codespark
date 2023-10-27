@@ -15,15 +15,10 @@ const HomeView = () => {
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://codespark.com.ua/courses" />
-        <link
-          rel="icon"
-          href="https://raw.githubusercontent.com/Makssik/codespark/main/src/images/favicon.ico"
-        />
         <meta
           name="title"
           content="CodeSpark: Навчимо дітей від 4 до 16 років програмувати з нуля за 4 місяці."
         />
-        <meta name="keywords" content="" />
         <meta
           name="description"
           content="Безкоштовний пробний урок. Зробимо вашу дитину Python-програмістом з нуля за 4 місяці на онлайн курсах - CodeSpark. ☎️(093)080-6375. 70% наших клієнтів отримали якісну почву для старту в IT. Досвідчені викладачі які є професіоналами в своїй галузі, Ефективна програма навчання. Доступна ціна навчання. "

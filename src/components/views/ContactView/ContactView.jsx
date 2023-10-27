@@ -12,10 +12,6 @@ const ContactView = () => {
         <meta name="robots" content="index, follow" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="canonical" href="https://codespark.com.ua/courses" />
-        <link
-          rel="icon"
-          href="https://raw.githubusercontent.com/Makssik/codespark/main/src/images/favicon.ico"
-        />
         <meta
           name="title"
           content="CodeSpark: Контакти, Онлайн-консультація з питань курсів "
