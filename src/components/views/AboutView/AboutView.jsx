@@ -12,7 +12,9 @@ const AboutView = () => {
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow" />
         <meta name="revisit-after" content="7 days" />
-        <link rel="canonical" href="https://codespark.com.ua/courses" />
+        <link rel="canonical" href="https://codespark.com.ua/about" />
+        <meta property="url" content="https://codespark.com.ua/about" />
+        <meta property="og:url" content="https://codespark.com.ua/about" />
         <link
           rel="icon"
           href="https://raw.githubusercontent.com/Makssik/codespark/main/src/images/favicon.ico"
@@ -38,7 +40,6 @@ const AboutView = () => {
           property="og:description"
           content="Основна інформація про навчання і викладачів | CodeSpark ☎️(093)080-6375. "
         />
-        <meta property="og:url" content="https://codespark.com.ua/about" />
         <meta
           property="og:image"
           content="https://raw.githubusercontent.com/Makssik/codespark/main/src/images/favicon.ico"
