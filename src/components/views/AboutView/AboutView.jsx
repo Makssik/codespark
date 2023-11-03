@@ -12,9 +12,6 @@ const AboutView = () => {
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow" />
         <meta name="revisit-after" content="7 days" />
-        <link rel="canonical" href="https://codespark.com.ua/about" />
-        <meta property="url" content="https://codespark.com.ua/about" />
-        <meta property="og:url" content="https://codespark.com.ua/about" />
         <link
           rel="icon"
           href="https://raw.githubusercontent.com/Makssik/codespark/main/src/images/favicon.ico"
@@ -52,6 +49,9 @@ const AboutView = () => {
           name="keywords"
           content="Обучение програмирования, Курсы для детей, Python курсы для детей, Python для детей, Python для дітей, програмування з нуля"
         />
+        <link rel="canonical" href="https://codespark.com.ua/about" />
+        <meta property="url" content="https://codespark.com.ua/about" />
+        <meta property="og:url" content="https://codespark.com.ua/about" />
       </Helmet>
       <motion.section {...setings}>
         <AboutUsSection />

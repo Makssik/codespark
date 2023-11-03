@@ -11,14 +11,10 @@ const ContactView = () => {
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="canonical" href="https://codespark.com.ua/contact" />
-        <meta property="url" content="https://codespark.com.ua/contact" />
-        <meta property="og:url" content="https://codespark.com.ua/contact" />
         <meta
           name="title"
           content="CodeSpark: Контакти, Онлайн-консультація з питань курсів "
         />
-        <meta name="keywords" content="" />
         <meta
           name="description"
           content="Ми на зв'язку з вами кожен день | Номер телефону, пошта та інші контакти codespark ☎️(093)080-6375. "
@@ -46,6 +42,9 @@ const ContactView = () => {
           content="Обучение програмирования, Курсы для детей, Python курсы для детей, Python для детей, Python для дітей, програмування з нуля"
         />
         <meta name="revisit-after" content="7 days" />
+        <link rel="canonical" href="https://codespark.com.ua/contact" />
+        <meta property="url" content="https://codespark.com.ua/contact" />
+        <meta property="og:url" content="https://codespark.com.ua/contact" />
       </Helmet>
       <section className="contact">
         <div className="container">

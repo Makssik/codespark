@@ -36,9 +36,6 @@ const PriceView = () => {
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://codespark.com.ua/pricing" />
-        <meta property="url" content="https://codespark.com.ua/pricing" />
-        <meta property="og:url" content="https://codespark.com.ua/pricing" />
         <meta
           name="title"
           content="CodeSpark: Вартість курсів програмування онлайн з нуля для дітей"
@@ -65,6 +62,9 @@ const PriceView = () => {
           name="keywords"
           content="Обучение програмирования, Курсы для детей, Python курсы для детей, Python для детей, Python для дітей, програмування з нуля"
         />
+        <link rel="canonical" href="https://codespark.com.ua/pricing" />
+        <meta property="url" content="https://codespark.com.ua/pricing" />
+        <meta property="og:url" content="https://codespark.com.ua/pricing" />
       </Helmet>
       <ReactModal
         style={customStyles}

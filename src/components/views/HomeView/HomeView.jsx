@@ -14,9 +14,6 @@ const HomeView = () => {
       <Helmet>
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://codespark.com.ua/" />
-        <meta property="url" content="https://codespark.com.ua/" />
-        <meta property="og:url" content="https://codespark.com.ua/" />
         <meta
           name="title"
           content="CodeSpark: Навчимо дітей від 4 до 16 років програмувати з нуля за 4 місяці."
@@ -47,6 +44,9 @@ const HomeView = () => {
           name="keywords"
           content="Обучение програмирования, Курсы для детей, Python курсы для детей, Python для детей, Python для дітей, програмування з нуля"
         />
+        <link rel="canonical" href="https://codespark.com.ua/" />
+        <meta property="url" content="https://codespark.com.ua/" />
+        <meta property="og:url" content="https://codespark.com.ua/" />
       </Helmet>
       <motion.section {...setings}>
         <Hero subtitle={'Тут ви знайдете короткий опис наших курсів'}>

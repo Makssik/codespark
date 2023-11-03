@@ -34,9 +34,6 @@ const CoursesView = () => {
     <>
       <Helmet>
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="canonical" href="https://codespark.com.ua/courses" />
-        <meta property="url" content="https://codespark.com.ua/courses" />
-        <meta property="og:url" content="https://codespark.com.ua/courses" />
         <meta
           name="title"
           content="CodeSpark: Курси програмування онлайн з нуля для дітей"
@@ -59,6 +56,9 @@ const CoursesView = () => {
           property="og:image"
           content="https://raw.githubusercontent.com/Makssik/codespark/main/src/images/favicon.ico"
         />
+        <link rel="canonical" href="https://codespark.com.ua/courses" />
+        <meta property="url" content="https://codespark.com.ua/courses" />
+        <meta property="og:url" content="https://codespark.com.ua/courses" />
       </Helmet>
 
       <Hero
