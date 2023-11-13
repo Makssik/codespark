@@ -6,6 +6,10 @@ import PriceView from './components/views/PriceView';
 import AboutView from './components/views/AboutView';
 import ContactView from './components/views/ContactView';
 import CoursesView from './components/views/CoursesView';
+
+import EnLayout from './englishSite/EnLayout';
+import EnglishHomeView from './englishSite/views/EnglishHomeView';
+import EnglishCoursesView from './englishSite/views/EnglishCoursesView/EnglishCoursesView';
 import { useEffect } from 'react';
 
 function ScrollToTop() {
@@ -44,6 +48,11 @@ function App() {
           <Route path="about" element={<AboutView />} />
           <Route path="contact" element={<ContactView />} />
           <Route path="courses" element={<CoursesView />} />
+        </Route>
+
+        <Route path="/en" element={<EnLayout />}>
+          <Route index element={<EnglishHomeView />} />
+          <Route path="courses" element={<EnglishCoursesView />} />
         </Route>
       </Routes>
     </>

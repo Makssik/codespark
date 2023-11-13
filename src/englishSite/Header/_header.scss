@@ -1,0 +1,95 @@
+.header {
+  position: relative;
+
+  background: $background-color;
+  width: 100%;
+}
+
+.logo--header {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  max-width: 1500px;
+  height: 60px;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: calc(100% - 150px);
+  height: 100%;
+  transition: right 550ms $bezier;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 70px;
+
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 2;
+
+    width: 60%;
+    height: 100vh;
+
+    background: #b9b9b9cc;
+    backdrop-filter: blur(8px);
+    box-shadow: 2px 0px 22px 10px rgb(68, 68, 68);
+    &.active {
+      right: 0;
+    }
+  }
+}
+
+.header__item {
+  margin-top: auto;
+  margin-right: 25px;
+
+  @media screen and (max-width: 768px) {
+    height: 35px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.header__link {
+  color: $main-text-color;
+  transition: color 250ms $bezier;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &.current {
+    color: $accent;
+  }
+}
+
+.header__menu-button-icon {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+
+    color: $accent;
+    position: absolute;
+    top: 12px;
+    right: 24px;
+
+    cursor: pointer;
+    z-index: 2;
+  }
+}
