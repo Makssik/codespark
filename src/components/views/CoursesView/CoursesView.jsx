@@ -38,7 +38,6 @@ const CoursesView = () => {
           name="title"
           content="CodeSpark: Курси програмування онлайн з нуля для дітей"
         />
-        <meta name="keywords" content="курси програмування" />
         <meta
           name="description"
           content="Зробимо вашу дитину Python-програмістом з нуля за 4 місяці на онлайн курсах - CodeSpark. Безкоштовний пробний урок. ☎️(093)080-6375. 70% наших клієнтів отримали якісну почву для старту в IT. Досвідчені викладачі які є професіоналами в своїй галузі, Ефективна програма навчання. Доступна ціна навчання. кодспарк, код спарк"
@@ -55,6 +54,14 @@ const CoursesView = () => {
         <meta
           property="og:image"
           content="https://raw.githubusercontent.com/Makssik/codespark/main/src/images/favicon.ico"
+        />
+        <meta
+          name="keywords"
+          content="CodeSpark, codespark, code spark, код спарк, кодспарк, Курси програмування, Курси програмування для дітей, Python курси для дітей, курси пайтон для дітей, Навчання програмування, візуальне програмування, Programming courses, Programming courses for children, Python courses for children, Python courses for children, Learning programming, visual programming"
+        />
+        <meta
+          name="keywords"
+          content="Обучение програмирования, Курсы для детей, Python курсы для детей, Python для детей, Python для дітей, програмування з нуля, Programming courses, Programming courses for children, Python courses for children, Python courses for children, Learning programming, visual programming"
         />
         <link rel="canonical" href="https://codespark.com.ua/courses" />
         <meta property="url" content="https://codespark.com.ua/courses" />

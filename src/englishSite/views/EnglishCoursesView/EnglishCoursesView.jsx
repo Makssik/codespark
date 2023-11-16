@@ -37,25 +37,32 @@ const EnglishCoursesView = () => {
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta
           name="title"
-          content="CodeSpark: Курси програмування онлайн з нуля для дітей"
+          content="CodeSpark: Online programming courses from scratch for kids"
         />
-        <meta name="keywords" content="курси програмування" />
         <meta
           name="description"
-          content="Зробимо вашу дитину Python-програмістом з нуля за 4 місяці на онлайн курсах - CodeSpark. Безкоштовний пробний урок. ☎️(093)080-6375. 70% наших клієнтів отримали якісну почву для старту в IT. Досвідчені викладачі які є професіоналами в своїй галузі, Ефективна програма навчання. Доступна ціна навчання. кодспарк, код спарк"
+          content="Let's make your child a Python programmer from scratch in 4 months on online courses - CodeSpark. Free trial lesson. ☎️(093)080-6375. 70% of our clients received quality ground for a start in IT. Experienced teachers who are professionals in their field, Effective training program. Affordable tuition. codespark, code spark"
         />
         <meta property="og:type" content="article" />
         <meta
           property="og:title"
-          content="Курси програмування онлайн з нуля для дітей"
+          content="Online programming courses from scratch for children"
         />
         <meta
           property="og:description"
-          content="Зробимо вашу дитину Python-програмістом з нуля за 4 місяці на онлайн курсах - CodeSpark. Безкоштовний пробний урок. ☎️(093)080-6375. 70% наших клієнтів отримали якісну почву для старту в IT. Досвідчені викладачі які є професіоналами в своїй галузі, Ефективна програма навчання. Доступна ціна навчання.кодспарк, код спарк "
+          content="Let's make your child a Python programmer from scratch in 4 months on online courses - CodeSpark. Free trial lesson. ☎️(093)080-6375. 70% of our clients received quality ground for a start in IT. Experienced teachers who are professionals in their field, Effective training program. The price of training is affordable.codespark, code spark "
         />
         <meta
           property="og:image"
           content="https://raw.githubusercontent.com/Makssik/codespark/main/src/images/favicon.ico"
+        />
+        <meta
+          name="keywords"
+          content="CodeSpark, codespark, code spark, код спарк, кодспарк, Курси програмування, Курси програмування для дітей, Python курси для дітей, курси пайтон для дітей, Навчання програмування, візуальне програмування, Programming courses, Programming courses for children, Python courses for children, Python courses for children, Learning programming, visual programming"
+        />
+        <meta
+          name="keywords"
+          content="Обучение програмирования, Курсы для детей, Python курсы для детей, Python для детей, Python для дітей, програмування з нуля, Programming courses, Programming courses for children, Python courses for children, Python courses for children, Learning programming, visual programming"
         />
         <link rel="canonical" href="https://codespark.com.ua/courses" />
         <meta property="url" content="https://codespark.com.ua/courses" />
