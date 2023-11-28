@@ -1,0 +1,53 @@
+.contact__form {
+  max-width: 380px;
+  margin: 0 auto;
+  .contact__form-field {
+    position: relative;
+    margin-bottom: 22px;
+  }
+  input.input--text {
+    @include input--text;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid grey;
+    outline: none;
+  }
+
+  .contact__label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    cursor: text;
+    transform: translateY(-50%);
+    transition: all 250ms $bezier;
+  }
+
+  input.input--text:focus,
+  input.input--text:not(:placeholder-shown){
+    border: 1px solid $accent;
+    & + label {
+      color: $accent;
+      transform: translateY(-43px);
+    }
+  }
+
+  .contact__submit-btn {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    transition: all 250ms $bezier;
+    overflow: hidden;
+    &:disabled{
+      cursor: not-allowed;
+    }
+    &:hover:not(:disabled) {
+      transform: scale(1.05);
+    }
+    &:active:not(:disabled) {
+      transform: scale(0.85);
+    }
+  }
+}

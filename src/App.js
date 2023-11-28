@@ -10,6 +10,10 @@ import CoursesView from './components/views/CoursesView';
 import EnLayout from './englishSite/EnLayout';
 import EnglishHomeView from './englishSite/views/EnglishHomeView';
 import EnglishCoursesView from './englishSite/views/EnglishCoursesView/EnglishCoursesView';
+
+import RuLayout from './russianSite/EnLayout';
+import RussianHomeView from './russianSite/views/RussianHomeView';
+import RussianCoursesView from './russianSite/views/RussianCoursesView/RussianCoursesView';
 import { useEffect } from 'react';
 
 function ScrollToTop() {
@@ -53,6 +57,11 @@ function App() {
         <Route path="/en" element={<EnLayout />}>
           <Route index element={<EnglishHomeView />} />
           <Route path="courses" element={<EnglishCoursesView />} />
+        </Route>
+
+        <Route path="/ru" element={<RuLayout />}>
+          <Route index element={<RussianHomeView />} />
+          <Route path="courses" element={<RussianCoursesView />} />
         </Route>
       </Routes>
     </>

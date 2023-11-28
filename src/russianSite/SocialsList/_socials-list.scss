@@ -1,0 +1,14 @@
+.socials-list{
+  display: flex;
+  justify-content: space-between;
+
+  svg {
+    font-size: 48px;
+    transition: all 250ms $bezier;
+
+    &:hover {
+      color: $accent;
+      transform: scale(1.06);
+    }
+  }
+}
